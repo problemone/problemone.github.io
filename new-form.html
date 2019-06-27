@@ -31,9 +31,11 @@
     </script>
 
     <script>
+      const db = firebase.firestore();
+
       function dataSaver() {
 
-        firebase.database().collection("trades").add({
+        db.collection("trades").add({
             message: document.forms["tradeForm"]["tradedescriptionbox"].value
         });
 
