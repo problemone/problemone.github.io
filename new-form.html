@@ -18,7 +18,7 @@
     <script>
 
       // Your web app's Firebase configuration
-      var firebaseConfig = {
+      firebase.initializeApp({
         apiKey: "AIzaSyCxEO7YIUmoR9IFQJEjY0T1b-q0UzSlwfs",
         authDomain: "khan-change.firebaseapp.com",
         databaseURL: "https://khan-change.firebaseio.com",
@@ -26,9 +26,7 @@
         storageBucket: "khan-change.appspot.com",
         messagingSenderId: "636102143870",
         appId: "1:636102143870:web:84ac45a83c95eaa1"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
+      });
 
       var db = firebase.firestore();
 
