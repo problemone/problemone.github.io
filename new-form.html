@@ -55,12 +55,16 @@
         e.preventDefault();
 
         var dbRef = firebase.database().ref("trades");
+        var storRef = firebase.storage().ref();
+
+        haveFile = document.forms["tradeForm"]["havePic"].files[0];
+        const haveName = (+new Date()) + '-' + haveFile.name;
+        const task = storRef.child(name).put(haveFile, metadata);
 
         var newDBRef = dbRef.push();
 
         newDBRef.set({
           have: document.forms["tradeForm"]["havedescriptionbox"].value,
-          havePic: document.forms["tradeForm"]["havePic"].value,
           need: document.forms["tradeForm"]["needdescriptionbox"].value
         });
      
