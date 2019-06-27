@@ -10,6 +10,8 @@
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#config-web-app -->
@@ -31,7 +33,7 @@
 
     <script>
       function dataSaver() {
-        
+
         firebase.database().collection("trades").add({
             message: document.forms["tradeForm"]["tradedescriptionbox"].value
         });
