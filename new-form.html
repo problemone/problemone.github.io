@@ -16,23 +16,18 @@
          https://firebase.google.com/docs/web/setup#config-web-app -->
 
     <script>
+
       // Your web app's Firebase configuration
-      var firebaseConfig = {
+      firebase.initializeApp({
         apiKey: "AIzaSyCxEO7YIUmoR9IFQJEjY0T1b-q0UzSlwfs",
         authDomain: "khan-change.firebaseapp.com",
-        databaseURL: "https://khan-change.firebaseio.com",
-        projectId: "khan-change",
-        storageBucket: "khan-change.appspot.com",
-        messagingSenderId: "636102143870",
-        appId: "1:636102143870:web:84ac45a83c95eaa1"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
+        projectId: "khan-change"
+      });
 
-      var database = firebase.database();
+      var db = firebase.firestore();
 
       function dataSaver() {
-        firebase.database().set({
+        db.collection("trades").add({
           message: document.forms["tradeForm"]["tradedescriptionbox"].value
         });
 
