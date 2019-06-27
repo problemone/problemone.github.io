@@ -59,7 +59,7 @@
 
         var haveFile = document.forms["tradeForm"]["havePic"].files[0];
         
-        ref.put(haveFile).then(function(snapshot) {
+        storageRef.put(haveFile).then(function(snapshot) {
           console.log('Uploaded a blob or file!');
         });
 
