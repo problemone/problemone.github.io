@@ -31,8 +31,7 @@
 
     <script>
       function dataSaver() {
-        e.preventDefault();
-
+        
         firebase.database().collection("trades").add({
             message: document.forms["tradeForm"]["tradedescriptionbox"].value
         });
