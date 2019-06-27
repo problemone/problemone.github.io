@@ -58,8 +58,7 @@
         var storRef = firebase.storage().ref();
 
         haveFile = document.forms["tradeForm"]["havePic"].files[0];
-        const haveName = (+new Date()) + '-' + haveFile.name;
-        const task = storRef.child(name).put(haveFile, metadata);
+        const task = storRef.child(name).put(haveFile);
 
         var newDBRef = dbRef.push();
 
