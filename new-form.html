@@ -34,7 +34,7 @@
 
       function dataSaver() {
 
-        db.collection("trades").set({
+        db.collection("trades").add({
             message: document.forms["tradeForm"]["tradedescriptionbox"].value
         });
 
