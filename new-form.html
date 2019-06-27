@@ -55,10 +55,13 @@
         e.preventDefault();
 
         var dbRef = firebase.database().ref("trades");
-        var storRef = firebase.storage().ref();
+        var storageRef = firebase.storage().ref();
 
-        haveFile = document.forms["tradeForm"]["havePic"].files[0];
-        const task = storRef.child(name).put(haveFile);
+        var haveFile = document.forms["tradeForm"]["havePic"].files[0];
+        
+        ref.put(haveFile).then(function(snapshot) {
+          console.log('Uploaded a blob or file!');
+        });
 
         var newDBRef = dbRef.push();
 
