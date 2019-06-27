@@ -27,7 +27,7 @@
       });
 
       function dataSaver() {
-        var dbRef = firebase.database();
+        var dbRef = firebase.database().ref();
         var newDBRef = dbRef.push();
 
         newDBRef.set({
