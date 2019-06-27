@@ -59,7 +59,7 @@
 
         var haveFile = storageRef.child(document.forms["tradeForm"]["havePic"].value);
         
-        storageRef.put(document.forms["tradeForm"]["havePic"].files[0]).then(function(snapshot) {
+        storageRef.put(document.getElementById('haveUpload').files[0]).then(function(snapshot) {
           console.log('Uploaded a blob or file!');
         });
 
@@ -83,7 +83,7 @@
           <textarea name = "havedescriptionbox" class="form-control message" id="havebescription" placeholder="Enter Description" cols="30" rows="10" required></textarea>
       </div>
       <br>
-      <input type="file" name="havePic" value="fileupload" id="fileupload">
+      <input type="file" name="havePic" value="fileupload" id="haveUpload">
       <br>
       <br>
       <br>
