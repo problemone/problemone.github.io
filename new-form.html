@@ -68,7 +68,8 @@
         var newDBRef = dbRef.push();
 
         newDBRef.set({
-          message: document.forms["tradeForm"]["tradedescriptionbox"].value
+          have: document.forms["tradeForm"]["havedescriptionbox"].value,
+          need: document.forms["tradeForm"]["needdescriptionbox"].value
         });
 
         console.log("successful " + document.forms["tradeForm"]["tradedescriptionbox"].value);
@@ -79,11 +80,20 @@
 
     <div class="alert alert-success success-message" style="display:none;">Your Trade Request Has Been Submitted</div>
     <form id="userForm" name="tradeForm"> 
-      <div class="describe">
-          <label for="tradedescription">Trade Description</label>
+      <div class="have">
+          <label for="havedescription">What Do You Have?</label>
           <br>
           <br>
-          <textarea name = "tradedescriptionbox" class="form-control message" id="tradedescription" placeholder="Enter Description" cols="30" rows="10" required></textarea>
+          <textarea name = "havebescriptionbox" class="form-control message" id="havebescription" placeholder="Enter Description" cols="30" rows="10" required></textarea>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="need">
+          <label for="needdescription">What Do You Need?</label>
+          <br>
+          <br>
+          <textarea name = "needdescriptionbox" class="form-control message" id="needdescription" placeholder="Enter Description" cols="30" rows="10" required></textarea>
       </div>
       <button type="submit" class="submitbutton">Submit</button>
     </form>
