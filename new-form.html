@@ -26,7 +26,9 @@
         appId: "1:636102143870:web:84ac45a83c95eaa1"
       });
 
-      function dataSaver() {
+      function dataSaver(e) {
+        e.preventDefault();
+
         var dbRef = firebase.database().ref("trades");
 
         var newDBRef = dbRef.push();
@@ -35,20 +37,24 @@
           message: document.forms["tradeForm"]["tradedescriptionbox"].value
         });
 
-        console.log("successful");
+        console.log("successful " + document.forms["tradeForm"]["tradedescriptionbox"].value);
      
         document.getElementById("userForm").reset();
       }
     </script>
 
     <div class="alert alert-success success-message" style="display:none;">Your Trade Request Has Been Submitted</div>
-    <form id="userForm" name="tradeForm" onsubmit="dataSaver()"> 
+    <form id="userForm" name="tradeForm"> 
       <div class="describe">
           <label for="tradedescription">Trade Description</label>
           <textarea name = "tradedescriptionbox" class="form-control message" id="tradedescription" placeholder="Enter Description" cols="30" rows="10" required></textarea>
       </div>
       <button type="submit" class="submitbutton">Submit</button>
     </form>
+
+    <script>
+      document.getElementById('userForm').addEventListener('submit', dataSaver);
+    </script>
 
   </body>
 </html>
