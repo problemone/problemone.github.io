@@ -43,7 +43,7 @@
       $('#userForm').submit(function(e) {
         e.preventDefault();
 
-        firebase.database().collection("trades").doc("Test").set({
+        firebase.database().collection("trades").add({
             message: $('.message').val()
         });
      
