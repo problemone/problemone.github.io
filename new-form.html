@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <header>
+    <h1>New Trade Request</h1>
+    <br>
+  </header>
+
+  <body>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCxEO7YIUmoR9IFQJEjY0T1b-q0UzSlwfs",
+        authDomain: "khan-change.firebaseapp.com",
+        databaseURL: "https://khan-change.firebaseio.com",
+        projectId: "khan-change",
+        storageBucket: "khan-change.appspot.com",
+        messagingSenderId: "636102143870",
+        appId: "1:636102143870:web:84ac45a83c95eaa1"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <div class="alert alert-success success-message" style="display:none;">Your Trade Request Has Been Submitted</div>
+    <form id="userForm"> 
+      <div class="describe">
+          <label for="tradedescription">Trade Description</label>
+          <textarea class="form-control message" id="tradedescription" placeholder="Enter Description" cols="30" rows="10" required></textarea>
+      </div>
+      <button type="submit" class="submitbutton">Submit</button>
+    </form>
+
+    <script>
+      var messagesRef = firebase.database().ref('contactformmessages');
+
+      $('#userForm').submit(function(e) {
+        e.preventDefault();
+     
+        var newMessageRef = messagesRef.push();
+        newMessageRef.set({
+            message: $('.message').val()
+        });
+     
+        $('.success-message').show();
+     
+        $('#userForm')[0].reset();
+      });
+    </script>
+
+  </body>
+</html>
