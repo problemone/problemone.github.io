@@ -39,13 +39,11 @@
     </form>
 
     <script>
-      var messagesRef = firebase.database().ref('trades');
 
       $('#userForm').submit(function(e) {
         e.preventDefault();
-     
-        var newMessageRef = messagesRef.push();
-        newMessageRef.set({
+
+        firebase.database().collection("trades").doc("Test").set({
             message: $('.message').val()
         });
      
