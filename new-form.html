@@ -32,7 +32,7 @@
       var db = firebase.firestore();
 
       function dataSaver() {
-        db.collection("trades").add({
+        db.add({
           message: document.forms["tradeForm"]["tradedescriptionbox"].value
         });
 
