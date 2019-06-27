@@ -27,8 +27,7 @@
       });
 
       function dataSaver() {
-        var dbRef = firebase.database().ref("trades");
-
+        var dbRef = firebase.database();
         var newDBRef = dbRef.push();
 
         newDBRef.set({
