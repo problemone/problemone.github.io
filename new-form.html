@@ -30,13 +30,11 @@
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
 
-      const db = firebase.firestore();
-
       function dataSaver() {
 
-        db.collection("trades").doc("example1").set({
-            message: document.forms["tradeForm"]["tradedescriptionbox"].value
-        });
+        const db = firebase.firestore();
+
+        db.collection("trades").add(document.forms["tradeForm"]["tradedescriptionbox"].value);
 
         console.log("successful");
      
