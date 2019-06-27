@@ -29,29 +29,30 @@
       firebase.initializeApp(firebaseConfig);
     </script>
 
-    <div class="alert alert-success success-message" style="display:none;">Your Trade Request Has Been Submitted</div>
-    <form id="userForm"> 
-      <div class="describe">
-          <label for="tradedescription">Trade Description</label>
-          <textarea class="form-control message" id="tradedescription" placeholder="Enter Description" cols="30" rows="10" required></textarea>
-      </div>
-      <button type="submit" class="submitbutton">Submit</button>
-    </form>
-
     <script>
+      var database = firebase.database();
 
-      $('#userForm').submit(function(e) {
+      function dataSaver() {
         e.preventDefault();
 
         firebase.database().collection("trades").add({
-            message: $('.message').val()
+            message: document.forms["tradeForm"]["tradedescriptionbox"].value
         });
-     
-        $('.success-message').show();
+
+        console.log("successful");
      
         $('#userForm')[0].reset();
-      });
+      }
     </script>
+
+    <div class="alert alert-success success-message" style="display:none;">Your Trade Request Has Been Submitted</div>
+    <form id="userForm" name="tradeForm" onsubmit="validateForm()"> 
+      <div class="describe">
+          <label for="tradedescription">Trade Description</label>
+          <textarea name = "tradedescriptionbox" class="form-control message" id="tradedescription" placeholder="Enter Description" cols="30" rows="10" required></textarea>
+      </div>
+      <button type="submit" class="submitbutton">Submit</button>
+    </form>
 
   </body>
 </html>
