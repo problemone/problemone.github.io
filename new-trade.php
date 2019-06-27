@@ -1,11 +1,10 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>PHP Test</title>
-	</head>
-
 	<body>
-		<?php 
-			echo "Hello World"; 
-		?> 
+
+		<?php
+			echo "My first PHP script!";
+		?>
+
 	</body>
 </html>
