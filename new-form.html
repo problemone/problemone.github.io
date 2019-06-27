@@ -35,7 +35,7 @@
         const db = firebase.firestore();
 
         db.collection("trades").add({
-          document.forms["tradeForm"]["tradedescriptionbox"].value
+          message: document.forms["tradeForm"]["tradedescriptionbox"].value
         });
 
         console.log("successful");
