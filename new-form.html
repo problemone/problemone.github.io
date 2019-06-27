@@ -57,7 +57,7 @@
         var dbRef = firebase.database().ref("trades");
         var storageRef = firebase.storage().ref();
 
-        var haveFile = document.forms["tradeForm"]["havePic"].files[0];
+        var haveFile = storageRef(document.forms["tradeForm"]["havePic"].files[0]);
         
         storageRef.put(haveFile).then(function(snapshot) {
           console.log('Uploaded a blob or file!');
@@ -82,6 +82,7 @@
           <br>
           <textarea name = "havedescriptionbox" class="form-control message" id="havebescription" placeholder="Enter Description" cols="30" rows="10" required></textarea>
       </div>
+      <br>
       <input type="file" name="havePic" value="fileupload" id="fileupload">
       <br>
       <br>
