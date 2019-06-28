@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			ul {
+  				list-style-type: none;
+  				margin: 0;
+  				padding: 0;
+  				overflow: hidden;
+  				background-color: #333;
+			}
+
+			li {
+  				float: left;
+			}
+
+			li a {
+  				display: block;
+  				color: white;
+  				text-align: center;
+  				padding: 14px 16px;
+  				text-decoration: none;
+			}
+
+			li a:hover {
+  				background-color: #111;
+			}
+			body, html {
+  				height: 100%;
+			}
+			
+			.active {
+ 				background-color: #4CAF50;
+			}
+			
+			/* Centered text */
+			.centered {
+				position: absolute;
+  				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+			}
+			
+			.item {
+				background-color: rgb(0, 0, 0);
+			}
+			
+			.parallax {
+	  			/*background-image: url('');*/
+
+  				height: 100%; 
+
+  				background-attachment: fixed;
+  				background-position: center;
+  				background-repeat: no-repeat;
+  				background-size: cover;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    	<script src="firebaseInit.js"></script>
+
+		<ul>
+  			<li><a class="active" href="/index.html">Home</a></li>
+  			<li><a href="/new-items.html">New Items</a></li>
+  			<li><a href="/new-form.html">Add An Item</a></li>
+  			<li><a href="/my-items.html">My Items</a></li>
+		</ul>
+
+		<div class="parallax"> <div class="item"> <div class="centered"> <div style="font-size:60px">Khan Exchange</div></div></div></div>
+		
+		<div class = "item">
+			<div style="height:100px; background-color: rgb(255, 255, 255); font-size:36px">
+				<script>
+					var tradeRef = firebase.database().ref("trades");
+					tradeRef.on('value', function(snapshot){
+						snapshot.forEach(function(childSnapshot){
+							var childData = childSnapshot.val();
+							console.log(childData);
+						});
+					});
+				</script>
+			</div>
+		</div>
+
+		<div class="parallax"></div>
+
+	</body>
+</html>
