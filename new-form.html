@@ -71,7 +71,7 @@
 
         var newDBRef = dbRef.push();
 
-        newDBRef.child(title).set({
+        newDBRef.child("trades").child(title).set({
           have: document.forms["tradeForm"]["havedescriptionbox"].value,
           need: document.forms["tradeForm"]["needdescriptionbox"].value
         });
