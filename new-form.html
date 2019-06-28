@@ -57,11 +57,11 @@
         var dbRef = firebase.database().ref("trades");
         var storageRef = firebase.storage().ref();
 
-        var haveFile = storageRef.child(document.forms["tradeForm"]["havePic"].value);
+        // var haveFile = storageRef.child(document.forms["tradeForm"]["havePic"].value);
         
-        storageRef.put(document.getElementById('haveUpload').files[0]).then(function(snapshot) {
-          console.log('Uploaded a blob or file!');
-        });
+        // storageRef.put(document.getElementById('haveUpload').files[0]).then(function(snapshot) {
+        //   console.log('Uploaded a blob or file!');
+        // });
 
         var newDBRef = dbRef.push();
 
