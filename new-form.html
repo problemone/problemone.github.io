@@ -67,7 +67,7 @@
         var task = haveStorageRef.put(haveFile);
         task = needStorageRef.put(needFile);
 
-        var dbRef = firebase.database().ref("trades");
+        var dbRef = firebase.database().ref("trades/" + title);
 
         var newDBRef = dbRef.push();
 
