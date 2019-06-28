@@ -76,10 +76,8 @@
 					var tradeRef = firebase.database().ref("trades");
 					tradeRef.on('value', function(snapshot){
 						snapshot.forEach(function(childSnapshot){
-							snapshot.forEach(function(childSnapshot){
-								var childData = childSnapshot.val();
-								console.log(childData);
-							});
+							var childData = childSnapshot.name();
+							console.log(childData);
 						});
 					});
 				</script>
