@@ -57,7 +57,7 @@
         var haveButton = document.getElementById("haveUpload");
         var haveFile = haveButton.files[0];
 
-        firebase.storage().ref('picFolder/' + haveFile.name);
+        var storageRef = firebase.storage().ref('picFolder/' + haveFile.name);
 
         var task = storageRef.put(haveFile);
 
