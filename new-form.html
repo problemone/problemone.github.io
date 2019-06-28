@@ -54,14 +54,20 @@
       function dataSaver(e) {
         e.preventDefault();
 
+        var title = document.forms["tradeForm"]["title"].value;
+
         var haveButton = document.getElementById("haveUpload");
         var haveFile = haveButton.files[0];
+        var needButton = document.getElementById("needUpload");
+        var needFile = needButton.files[0];
 
-        var storageRef = firebase.storage().ref('picFolder/' + haveFile.name);
+        var haveStorageRef = firebase.storage().ref('picFolder/' + title + '/have');
+        var needStorageRef = firebase.storage().ref('picFolder/' + title + '/need');
 
-        var task = storageRef.put(haveFile);
+        var task = haveStorageRef.put(haveFile);
+        task = needStorageRef.put(needFile);
 
-        var dbRef = firebase.database().ref("trades");
+        var dbRef = firebase.database().ref("trades/" + title);
 
         var newDBRef = dbRef.push();
 
@@ -76,11 +82,17 @@
 
     <div class="alert alert-success success-message" style="display:none;">Your Trade Request Has Been Submitted</div>
     <form id="userForm" name="tradeForm"> 
+      <div class="title">
+          <label for="title">Title Your Post</label>
+          <br>
+          <br>
+          <input type="text" name="title" id = "titlebox" required>
+      </div>
       <div class="have">
           <label for="havedescription">What Do You Have?</label>
           <br>
           <br>
-          <textarea name = "havedescriptionbox" class="form-control message" id="havebescription" placeholder="Enter Description" cols="30" rows="10" required></textarea>
+          <textarea name = "havedescriptionbox" class="form-control message" id="havebescription" placeholder="Enter Description" cols="30" rows="10"></textarea>
       </div>
       <br>
       <input type="file" name="havePic" value="fileupload" id="haveUpload" accept="image/*">
@@ -92,8 +104,12 @@
           <label for="needdescription">What Do You Need?</label>
           <br>
           <br>
-          <textarea name = "needdescriptionbox" class="form-control message" id="needdescription" placeholder="Enter Description" cols="30" rows="10" required></textarea>
+          <textarea name = "needdescriptionbox" class="form-control message" id="needdescription" placeholder="Enter Description" cols="30" rows="10"></textarea>
       </div>
+      <br>
+      <input type="file" name="needPic" value="fileupload" id="needUpload" accept="image/*">
+      <br>
+      <br>
       <button type="submit" class="submitbutton">Submit</button>
     </form>
 
