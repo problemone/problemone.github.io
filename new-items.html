@@ -111,7 +111,7 @@
 						snapshot.forEach(function(childSnapshot){
 							var photoRef = imageFolder.child(childSnapshot.name + 'have');
 
-							starsRef.getDownloadURL().then(function(url) {
+							photoRef.getDownloadURL().then(function(url) {
 							  var link = url;
 							}).catch(function(error) {
 
