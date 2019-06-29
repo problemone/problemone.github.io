@@ -72,7 +72,7 @@
 			  background:url(item_pictures/corkboard.png) bottom;
 			  background-size: 140% 140%;
 			  background-repeat: no-repeat;
-			  background-origin: border-box;
+			  background-origin: content-box;
 			}
 
 			/*
@@ -106,7 +106,7 @@
 					tradeRef.on('value', function(snapshot){
 						snapshot.forEach(function(childSnapshot){
 							var childData = childSnapshot.val();
-							document.getElementById("body").innerHTML += "<div class = 'parent'><div style='clear: both'><img style='float: left' src = 'item_pictures/blankpolaroid.png' class = 'photo1'/>" + childData.have + "<img style='float: right' src = 'item_pictures/blankpolaroid.png' class = 'photo1'/>" + childData.need + "</div></div><br><br><br>";
+							document.getElementById("body").innerHTML += "<div class = 'parent'><div style='clear: both'><img style='float: left' src = 'item_pictures/blankpolaroid.png' class = 'photo1'/>" + childData.have + "<img style='float: right' src = 'item_pictures/blankpolaroid.png' class = 'photo1'/>" + childData.need + "</div><br><br><br></div>";
 						});
 					});
 				</script>
