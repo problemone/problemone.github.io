@@ -77,7 +77,7 @@
 					tradeRef.on('value', function(snapshot){
 						snapshot.forEach(function(childSnapshot){
 							var childData = childSnapshot.val();
-							console.log(childData.need);
+							document.write("<h1>" + childData.have + "|" + childData.need + "</h1><br>");
 						});
 					});
 				</script>
