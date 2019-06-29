@@ -57,7 +57,7 @@
 			}
 		</style>
 	</head>
-	<body>
+	<body id = "body">
 		<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
     	<script src="firebaseInit.js"></script>
 
@@ -77,7 +77,7 @@
 					tradeRef.on('value', function(snapshot){
 						snapshot.forEach(function(childSnapshot){
 							var childData = childSnapshot.val();
-							document.write("<h1>" + childData.have + "|" + childData.need + "</h1><br>");
+							document.getElementById("body").innerHTML+= "<h1>" + childData.have + "|" + childData.need + "</h1><br>";
 						});
 					});
 				</script>
