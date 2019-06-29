@@ -60,6 +60,14 @@
 				text-align: center;
 			}
 
+			#rectcorners {
+			  border-radius: 25px;
+			  border: 2px solid #73AD21;
+			  padding: 20px; 
+			  width: 200px;
+			  height: 150px; 
+			}
+
 		</style>
 	</head>
 	<body id = "body">
@@ -82,7 +90,7 @@
 					tradeRef.on('value', function(snapshot){
 						snapshot.forEach(function(childSnapshot){
 							var childData = childSnapshot.val();
-							document.getElementById("body").innerHTML+= "<h1>" + childData.have + "|" + childData.need + "</h1><br>";
+							document.getElementById("body").innerHTML+= "<h1 id = 'rectcorners'>" + childData.have + "</h1><h1 id = 'rectcorners'>" + childData.need + "</h1><br>";
 						});
 					});
 				</script>
