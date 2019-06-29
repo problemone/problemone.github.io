@@ -90,7 +90,7 @@
 					tradeRef.on('value', function(snapshot){
 						snapshot.forEach(function(childSnapshot){
 							var childData = childSnapshot.val();
-							document.getElementById("body").innerHTML+= "<div style='clear: both'><h1 id = 'rectcorners'>" + childData.have + "</h1><h1 id = 'rectcorners'>" + childData.need + "</h1></div><br>";
+							document.getElementById("body").innerHTML+= "<div style='clear: both'><h1 id = 'rectcorners' style='float: left'>" + childData.have + "</h1><h1 id = 'rectcorners' style='float: right'>" + childData.need + "</h1></div><br>";
 						});
 					});
 				</script>
