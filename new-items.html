@@ -78,6 +78,12 @@
 				z-index: 2;
 			}
 
+			.parent {
+			  position: relative;
+			  top: 0;
+			  left: 0;
+			}
+
 			/*
 			#rectcorners {
 			  border-radius: 25px;
@@ -109,7 +115,7 @@
 					tradeRef.on('value', function(snapshot){
 						snapshot.forEach(function(childSnapshot){
 							var childData = childSnapshot.val();
-							document.getElementById("body").innerHTML += "<img src = 'item_pictures/corkboard.png' class = 'photo2'/><div style='clear: both'><img style='float: left' src = 'item_pictures/blankpolaroid.png' class = 'photo1'/>" + childData.have + "<img style='float: right' src = 'item_pictures/blankpolaroid.png' class = 'photo1'/>" + childData.need + "</div><br>";
+							document.getElementById("body").innerHTML += "<div class = 'parent><img src = 'item_pictures/corkboard.png' class = 'photo2'/><div style='clear: both'><img style='float: left' src = 'item_pictures/blankpolaroid.png' class = 'photo1'/>" + childData.have + "<img style='float: right' src = 'item_pictures/blankpolaroid.png' class = 'photo1'/>" + childData.need + "</div></div><br>";
 						});
 					});
 				</script>
