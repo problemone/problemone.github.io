@@ -71,7 +71,7 @@
 
 			.parent {
 				overflow: hidden;
-				background:url(item_pictures/corkboard.png) top;
+				background:url(item_pictures/blankpictures.png) top;
 				background-size: 40% 40%;
 				background-repeat: no-repeat;
 				/*background-origin: content-box;*/
@@ -124,7 +124,7 @@
 							});
 
 							var childData = childSnapshot.val();
-							document.getElementById("body").innerHTML += "<img src = '" + link + "'/><div class = 'parent'><div style='clear: both'><img style='float: left' src = 'item_pictures/blankpictures.png' class = 'parent'/>" + childData.have + childData.need + "</div></div><br><br>";
+							document.getElementById("body").innerHTML += "<img src = '" + link + "'/><div class = 'parent'><div style='clear: both'><img style='float: left' src = '' class = 'parent'/>" + childData.have + childData.need + "</div></div><br><br>";
 						});
 					});
 				</script>
