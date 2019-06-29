@@ -65,9 +65,9 @@
 
         var dbRef = firebase.database().ref("trades/" + title);
 
-        var newDBRef = dbRef.push();
+        // var newDBRef = dbRef.push();
 
-        dbRef.push({
+        dbRef.set({
           have: document.forms["tradeForm"]["havedescriptionbox"].value,
           need: document.forms["tradeForm"]["needdescriptionbox"].value
         });
