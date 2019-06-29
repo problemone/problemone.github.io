@@ -124,7 +124,7 @@
 							});
 
 							var childData = childSnapshot.val();
-							document.getElementById("body").innerHTML += "<img src = '" + link + "'/><div class = 'parent'><div style='clear: both'><img style='float: left' src = '' class = 'parent'/>" + childData.have + childData.need + "</div></div><br><br>";
+							document.getElementById("body").innerHTML += "<div class = 'parent'><div style='clear: both'><img style='float: left' src = '" + link + "' class = 'parent'/>" + childData.have + childData.need + "</div></div><br><br>";
 						});
 					});
 				</script>
