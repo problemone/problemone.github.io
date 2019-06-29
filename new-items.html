@@ -104,6 +104,8 @@
 		<div class = "item">
 			<div style="background-color: rgb(255, 255, 255); font-size:36px">
 				<script>
+					var link;
+					
 					var imageFolder = firebase.storage().ref('picFolder');
 
 					var tradeRef = firebase.database().ref("trades");
@@ -112,7 +114,7 @@
 							var photoRef = imageFolder.child(childSnapshot.name + 'have');
 
 							photoRef.getDownloadURL().then(function(url) {
-							  var link = url;
+							  link = url;
 							}).catch(function(error) {
 
 							  switch (error.code) {
