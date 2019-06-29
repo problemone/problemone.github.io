@@ -71,7 +71,6 @@
 
 			.parent {
 				overflow: hidden;
-				/*padding: 100px;*/
 				background:url(item_pictures/corkboard.png) top;
 				background-size: 140% 140%;
 				background-repeat: no-repeat;
@@ -105,11 +104,25 @@
 		<div class = "item">
 			<div style="background-color: rgb(255, 255, 255); font-size:36px">
 				<script>
+					var imageFolder = firebase.storage().ref('picFolder');
+
 					var tradeRef = firebase.database().ref("trades");
 					tradeRef.on('value', function(snapshot){
 						snapshot.forEach(function(childSnapshot){
+							var photoRef = imageFolder.child(childSnapshot.name + 'have');
+
+							starsRef.getDownloadURL().then(function(url) {
+							  var link = url;
+							}).catch(function(error) {
+
+							  switch (error.code) {
+							    case 'storage/object-not-found':
+							      break;
+							  }
+							});
+
 							var childData = childSnapshot.val();
-							document.getElementById("body").innerHTML += "<div class = 'parent'><div style='clear: both'><img style='float: left' src = 'item_pictures/blankpolaroid.png' class = 'photo1'/>" + childData.have + "<img style='float: right' src = 'item_pictures/blankpolaroid.png' class = 'photo1'/>" + childData.need + "</div></div><br><br>";
+							document.getElementById("body").innerHTML += "<img src = '" + link + "'/><div class = 'parent'><div style='clear: both'><img style='float: left' src = 'item_pictures/blankpolaroid.png' class = 'photo1'/>" + childData.have + "<img style='float: right' src = 'item_pictures/blankpolaroid.png' class = 'photo1'/>" + childData.need + "</div></div><br><br>";
 						});
 					});
 				</script>
