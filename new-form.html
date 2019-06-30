@@ -71,6 +71,7 @@
         var dbRef = firebase.database().ref("trades/" + title);
 
         dbRef.set({
+          title: document.forms["tradeForm"]["titlebox"].value,
           have: document.forms["tradeForm"]["havedescriptionbox"].value,
           need: document.forms["tradeForm"]["needdescriptionbox"].value
         });
