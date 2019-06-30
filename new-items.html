@@ -113,10 +113,10 @@
 					tradeRef.on('value', function(snapshot){
 						snapshot.forEach(function(childSnapshot){
 							var photoRef = imageFolder.child(childSnapshot.name + 'have');
-							console.log(photoRef);
 
 							photoRef.getDownloadURL().then(function(url) {
 							  link = url;
+							  console.log(link);
 							}).catch(function(error) {
 
 							  switch (error.code) {
