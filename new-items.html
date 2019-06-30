@@ -71,10 +71,11 @@
 
 			.parent {
 				overflow: hidden;
-				background:url(item_pictures/blankpictures.png);
+				background: url(item_pictures/blankpictures.png);
 				background-size: 100% auto;
 				background-repeat: no-repeat;
-				margin-bottom:10px;
+				margin-bottom: 10px;
+				min-height: 100%;
 				/*background-origin: content-box;*/
 			}
 
@@ -126,7 +127,7 @@
 							  }
 							});
 
-							document.getElementById("body").innerHTML += "<div class = 'parent'><div style='clear: both'><img style='float: left' src = '" + link + "' class = 'photo1'/>" + childData.have + childData.need + "</div></div><br><br><br>";
+							document.getElementById("body").innerHTML += "<div class = 'parent'><div style='clear: both'><img style='float: left' src = '" + link + "' class = 'photo1'/>" + childData.have + childData.need + "</div></div>";
 						});
 					});
 				</script>
