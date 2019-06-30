@@ -120,7 +120,7 @@
 							var photoRef = imageFolder.child(childData.title + '/have');
 
 							photoRef.getDownloadURL().then(function(url) {
-							  document.getElementById("body").innerHTML += "<div class = 'parent'><div style='clear: both'><img style='height: 995; float: left' src = '" + url + "' class = 'photo1'/>" + childData.have + childData.need + "</div></div>";
+							  document.getElementById("body").innerHTML += "<div class = 'parent'><div style='clear: both'><img style='height: 995px; float: left' src = '" + url + "' class = 'photo1'/>" + childData.have + childData.need + "</div></div>";
 							}).catch(function(error) {
 
 							  switch (error.code) {
