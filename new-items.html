@@ -113,6 +113,8 @@
 					tradeRef.on('value', function(snapshot){
 						snapshot.forEach(function(childSnapshot){
 							var photoRef = imageFolder.child(childSnapshot.title + '/have');
+							alert(title);
+
 
 							photoRef.getDownloadURL().then(function(url) {
 							  link = url;
