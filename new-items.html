@@ -113,6 +113,7 @@
 					tradeRef.on('value', function(snapshot){
 						snapshot.forEach(function(childSnapshot){
 							var photoRef = imageFolder.child(childSnapshot.name + 'have');
+							console.log(photoRef);
 
 							photoRef.getDownloadURL().then(function(url) {
 							  link = url;
@@ -125,7 +126,7 @@
 							});
 
 							var childData = childSnapshot.val();
-							document.getElementById("body").innerHTML += "<div class = 'parent'><div style='clear: both'><img style='float: left' src = '" + link + "' class = 'parent'/>" + childData.have + childData.need + "</div></div><br><br>";
+							document.getElementById("body").innerHTML += "<div class = 'parent'><div style='clear: both'><img style='float: left' src = '" + link + "' class = 'photo1'/>" + childData.have + childData.need + "</div></div><br><br>";
 						});
 					});
 				</script>
