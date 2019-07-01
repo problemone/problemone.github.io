@@ -2,6 +2,18 @@
 <html>
 	<head>
 		<style>
+			.column {
+  				float: left;
+  				width: 33.33%;
+  				padding: 5px;
+			}
+			
+			.row::after {
+  				content: "";
+  				clear: both;
+  				display: table;
+			}
+			
 			ul {
   				list-style-type: none;
   				margin: 0;
@@ -45,11 +57,37 @@
 				background-color: rgba(0, 0, 0, 0.0000000000000000000000000000000000000000001);
 			}
 			
-			.parallax {
+			.parHome {
   				/* The image used */
-	  			background-image: url('https://www.richardcayne.com/wp-content/uploads/2015/03/stock-chart-blue.png');
+	  			background-image: url('https://www.publicdomainpictures.net/pictures/170000/velka/grunge-background-14635619239LT.jpg');
 
   				/* Full height */
+  				height: 100%; 
+
+  				/* Create the parallax scrolling effect */
+  				background-attachment: fixed;
+  				background-position: center;
+  				background-repeat: no-repeat;
+  				background-size: cover;
+			}
+			.parPencils {
+  				/* The image used */
+	  			background-image: url(https://cdn.pixabay.com/photo/2018/09/08/14/59/pencils-3662614_960_720.jpg);
+
+  				/* Full height */
+  				height: 100%; 
+
+  				/* Create the parallax scrolling effect */
+  				background-attachment: fixed;
+  				background-position: center;
+  				background-repeat: no-repeat;
+  				background-size: cover;
+			}
+			.parErasers {
+  				/* The image used */
+	  			background-image:  url(https://www.publicdomainpictures.net/pictures/90000/velka/pencil-erasers.jpg);
+  				
+				/* Full height */
   				height: 100%; 
 
   				/* Create the parallax scrolling effect */
@@ -83,15 +121,20 @@
 			
 		</ul>
 
-		<div class="parallax"> <div class="text"> <div class="centered"> <div style="font-size:60px">Mercatio</div></div></div></div>
+		<div class="parHome"> <div class="text"> <div class="centered"> <div style="font-size:60px; font color = "white"">Mercatio</div></div></div></div>
 		
-		<div class = "text">
-			<div style="font-size:36px"> <font color = "white">
+		<div style="font-size:36px; font color = "white"; background-color: #A9A9A9">
 			This project was made by Nicholas and Robert, in the hopes to get a proper exchange network, almost like a version of cryptocurrency, without all of the coins.
-			</font></div>
 		</div>
-
-		<div class="parallax2"></div>
+		
+		<div class="row">
+			<div class="column">
+				<div class="parErasers"></div>
+			</div>
+			<div class="column">
+				<div class="parPencils"></div>
+			</div>
+		</div>
 
 	</body>
 </html>
