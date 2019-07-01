@@ -35,6 +35,7 @@
 			
 			/* Centered text */
 			.centered {
+				position: absolute;
   				top: 30%;
   				left: 50%;
   				transform: translate(-50%, -50%);
@@ -65,6 +66,7 @@
 				background-repeat: no-repeat;
 				min-height: 750px;
 				min-width: 100%;
+				position: relative;
 			}
 
 			.row::after {
@@ -111,7 +113,7 @@
 							var photoRef = imageFolder.child(childData.title + '/have');
 
 							photoRef.getDownloadURL().then(function(url) {
-								document.getElementById("body").innerHTML += "<div class='row'><div class = 'parent' style = 'position: relative'><img style='left: 8.897%; top: 105px; position: absolute; width: 27.5%; height: 415px; float: left' src = '" + url + "' class = 'photo1'/>";
+								document.getElementById("body").innerHTML += "<div class='row'><div class = 'parent'><img style='left: 8.897%; top: 105px; position: absolute; width: 27.5%; height: 415px; float: left' src = '" + url + "' class = 'photo1'/>";
 							}).catch(function(error) {
 
 							  switch (error.code) {
