@@ -122,8 +122,6 @@
 							  }
 							});
 
-							document.getElementById("body").innerHTML += "<div class = 'parent'><img style='display: inline-block; top: 105px; left: 8.897%; position: relative; width: 27.5%; height: 415px; float: left' src = 'havePic' class = 'photo1'/>";
-
 							photoRef = imageFolder.child(childData.title + '/need');
 
 							photoRef.getDownloadURL().then(function(url) {
@@ -137,7 +135,7 @@
 							  }
 							});
 
-							document.getElementById("body").innerHTML += "<img style='display: inline; top: 105px; right: 9.241%; width: 27.5%; height: 415px; float: right' src = 'needPic' class = 'photo1'/></div>";
+							document.getElementById("body").innerHTML += "<div class = 'parent'><img style='display: inline-block; top: 105px; left: 8.897%; position: relative; width: 27.5%; height: 415px; float: left' src = 'havePic' class = 'photo1'/><img style='display: inline; top: 105px; right: 9.241%; width: 27.5%; height: 415px; float: right' src = 'needPic' class = 'photo1'/></div>";
 						});
 					});
 				</script>
