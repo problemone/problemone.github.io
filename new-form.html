@@ -75,35 +75,7 @@
           have: document.forms["tradeForm"]["havedescriptionbox"].value,
           need: document.forms["tradeForm"]["needdescriptionbox"].value
         });
-     
-         var photoRef = firebase.storage().ref('picFolder/' + title + '/have');  
 
-        photoRef.getDownloadURL().then(function(url) {
-            dbRef.set({
-              haveLink: url
-            });
-          }).catch(function(error) {
-
-             switch (error.code) {
-              case 'storage/object-not-found':
-                break;
-            }
-          });
-
-        photoRef = firebase.storage().ref('picFolder/' + title + '/need'); 
-
-        photoRef.getDownloadURL().then(function(url) {
-            dbRef.set({
-              needLink: url
-            });
-          }).catch(function(error) {
-
-             switch (error.code) {
-              case 'storage/object-not-found':
-                break;
-            }
-          });
-     
         document.getElementById("userForm").reset();
       }
     </script>
