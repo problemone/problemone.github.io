@@ -69,9 +69,8 @@
         task = needStorageRef.put(needFile);
 
         var dbRef = firebase.database().ref("trades/" + title);
-        var imageFolder = firebase.storage().ref('picFolder');
 
-        var photoRef = imageFolder.child(title + '/have');  
+        var photoRef = firebase.storage().ref('picFolder/' + title + '/have');  
 
         photoRef.getDownloadURL().then(function(url) {
             dbRef.set({
@@ -85,7 +84,7 @@
             }
           });
 
-        photoRef = imageFolder.child(title + '/need');  
+        photoRef = firebase.storage().ref('picFolder/' + title + '/need'); 
 
         photoRef.getDownloadURL().then(function(url) {
             dbRef.set({
