@@ -127,7 +127,7 @@
 							photoRef = imageFolder.child(childData.title + '/need');
 
 							photoRef.getDownloadURL().then(function(url) {
-								document.getElementById("body").innerHTML += "<img style='position: absolute; right: 9.241%; top: " + 105 * interval + "px; width: 27.5%; height: 415px; float: right' src = '" + url + "' class = 'photo1'/></div>";
+								document.getElementById("body").innerHTML += "<img style='position: absolute; right: 9.241%; top: " + 400 * interval + "px; width: 27.5%; height: 415px; float: right' src = '" + url + "' class = 'photo1'/></div>";
 								interval++;		
 							}).catch(function(error) {
 
