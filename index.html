@@ -119,6 +119,21 @@
   				background-repeat: no-repeat;
   				background-size: cover;
 			}
+			/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+			@media only screen and (max-device-width: 1366px) {
+  				.parHome {
+    					background-attachment: scroll;
+  				}
+				.parNotebooks {
+    					background-attachment: scroll;
+  				}
+				.parPencils {
+    					background-attachment: scroll;
+  				}
+				.parErasers {
+    					background-attachment: scroll;
+  				}
+			}
 		</style>
 	</head>
 	<body style="margin:0;">
