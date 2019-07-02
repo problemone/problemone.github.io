@@ -84,25 +84,25 @@
             }
           });
 
-        photoRef = firebase.storage().ref('picFolder/' + title + '/need'); 
+        // photoRef = firebase.storage().ref('picFolder/' + title + '/need'); 
 
-        photoRef.getDownloadURL().then(function(url) {
-            dbRef.set({
-              needLink: url
-            });
-          }).catch(function(error) {
+        // photoRef.getDownloadURL().then(function(url) {
+        //     dbRef.set({
+        //       needLink: url
+        //     });
+        //   }).catch(function(error) {
 
-             switch (error.code) {
-              case 'storage/object-not-found':
-                break;
-            }
-          });
+        //      switch (error.code) {
+        //       case 'storage/object-not-found':
+        //         break;
+        //     }
+        //   });
 
-        dbRef.set({
-          title: document.forms["tradeForm"]["titlebox"].value,
-          have: document.forms["tradeForm"]["havedescriptionbox"].value,
-          need: document.forms["tradeForm"]["needdescriptionbox"].value
-        });
+        // dbRef.set({
+        //   title: document.forms["tradeForm"]["titlebox"].value,
+        //   have: document.forms["tradeForm"]["havedescriptionbox"].value,
+        //   need: document.forms["tradeForm"]["needdescriptionbox"].value
+        // });
      
         document.getElementById("userForm").reset();
       }
