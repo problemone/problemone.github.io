@@ -119,6 +119,21 @@
   				background-repeat: no-repeat;
   				background-size: cover;
 			}
+			/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+			@media only screen and (max-device-width: 1366px) {
+  				.parHome {
+    					background-attachment: scroll;
+  				}
+				.parNotebooks {
+    					background-attachment: scroll;
+  				}
+				.parPencils {
+    					background-attachment: scroll;
+  				}
+				.parErasers {
+    					background-attachment: scroll;
+  				}
+			}
 		</style>
 	</head>
 	<body style="margin:0;">
@@ -146,7 +161,7 @@
 		</div>
 		
 		<div style="height:125px;background-color:#000000;font-size:36px;color:white;"><center> <div class="middle">
-			Mercatio was created by Nicholas and Robert by designing an item exchange network for our high school, Khan Lab School. We wanted to make trading items among students much easier. 
+			Mercatio was created by Nicholas and Robert. They designed an item exchange network for their high school, Khan Lab School. Trading items among students is now much easier. 
 		</div></center></div>		
 		
 		<div class="parNotebooks">
