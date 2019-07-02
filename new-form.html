@@ -88,6 +88,10 @@
                     break;
                 }
               });
+          });
+
+          dbRef.once("value")    
+            .then(function(snapshot){  
 
             photoRef = imageFolder.child(childData.title + '/need');  
 
@@ -104,7 +108,7 @@
               });
           });
 
-        dbRef.update({
+        dbRef.set({
           title: document.forms["tradeForm"]["titlebox"].value,
           have: document.forms["tradeForm"]["havedescriptionbox"].value,
           need: document.forms["tradeForm"]["needdescriptionbox"].value
