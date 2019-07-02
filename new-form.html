@@ -71,7 +71,7 @@
         var dbRef = firebase.database().ref("trades/" + title);
         var imageFolder = firebase.storage().ref('picFolder');
 
-        var photoRef = imageFolder.child(title + "HaveLink");  
+        var photoRef = imageFolder.child(title + '/have');  
 
         photoRef.getDownloadURL().then(function(url) {
             dbRef.set({
@@ -85,7 +85,7 @@
             }
           });
 
-        photoRef = imageFolder.child(title + "NeedLink");  
+        photoRef = imageFolder.child(title + '/need');  
 
         photoRef.getDownloadURL().then(function(url) {
             dbRef.set({
