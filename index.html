@@ -119,6 +119,7 @@
   				background-repeat: no-repeat;
   				background-size: cover;
 			}
+
 			/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 			@media only screen and (max-device-width: 1366px) {
   				.parHome {
@@ -136,7 +137,7 @@
 			}
 		</style>
 	</head>
-	<body style="margin:0;">
+	<body style="margin:0;" onLoad="myFunction()">
 
 		<ul>
   			<li><a class="active" href="/index.html">Home</a></li>
@@ -171,7 +172,9 @@
 			</div>
 		</div>
 		<script>
-			document.body.style.parHome.backgroundImage = "url('https://giphy.com/embed/3oriNU0ZF7vAHESLq8')";
+			function myFunction() {
+  				document.body.style.parHome.backgroundImage = "url('https://giphy.com/embed/3oriNU0ZF7vAHESLq8')";
+			}
 		</script>
 	</body>
 </html>
