@@ -71,33 +71,37 @@
         var dbRef = firebase.database().ref("trades/" + title);
         var imageFolder = firebase.storage().ref('picFolder');
 
-        var childData = childSnapshot.val();
+        dbRef.once("value")    
+          .then(function(snapshot){    
 
-        var photoRef = imageFolder.child(childData.title + '/have');  
-        photoRef.getDownloadURL().then(function(url) {
-            dbRef.set({
-              haveLink: url
-            });
-          }).catch(function(error) {
+            var childData = snapshot.val();
 
-             switch (error.code) {
-              case 'storage/object-not-found':
-                break;
-            }
-          });
+            var photoRef = imageFolder.child(childData.title + '/have');  
+            photoRef.getDownloadURL().then(function(url) {
+                dbRef.set({
+                  haveLink: url
+                });
+              }).catch(function(error) {
 
-        photoRef = imageFolder.child(childData.title + '/need');  
+                 switch (error.code) {
+                  case 'storage/object-not-found':
+                    break;
+                }
+              });
 
-        photoRef.getDownloadURL().then(function(url) {
-            dbRef.set({
-              needLink: url
-            });
-          }).catch(function(error) {
+            photoRef = imageFolder.child(childData.title + '/need');  
 
-             switch (error.code) {
-              case 'storage/object-not-found':
-                break;
-            }
+            photoRef.getDownloadURL().then(function(url) {
+                dbRef.set({
+                  needLink: url
+                });
+              }).catch(function(error) {
+
+                 switch (error.code) {
+                  case 'storage/object-not-found':
+                    break;
+                }
+              });
           });
 
         dbRef.set({
