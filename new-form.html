@@ -88,28 +88,23 @@
                     break;
                 }
               });
-          });
 
-          dbRef.once("value")    
-            .then(function(snapshot){  
+            photoRef = imageFolder.child(childData.title + '/need');  
 
-              var childData = snapshot.val();
-              var photoRef = imageFolder.child(childData.title + '/need');  
+            photoRef.getDownloadURL().then(function(url) {
+                dbRef.set({
+                  needLink: url
+                });
+              }).catch(function(error) {
 
-              photoRef.getDownloadURL().then(function(url) {
-                  dbRef.update({
-                    needLink: url
-                  });
-                }).catch(function(error) {
-
-                   switch (error.code) {
-                    case 'storage/object-not-found':
-                      break;
-                  }
+                 switch (error.code) {
+                  case 'storage/object-not-found':
+                    break;
+                }
               });
           });
 
-        dbRef.update({
+        dbRef.set({
           title: document.forms["tradeForm"]["titlebox"].value,
           have: document.forms["tradeForm"]["havedescriptionbox"].value,
           need: document.forms["tradeForm"]["needdescriptionbox"].value
