@@ -92,7 +92,7 @@
             photoRef = imageFolder.child(childData.title + '/need');  
 
             photoRef.getDownloadURL().then(function(url) {
-                dbRef.set({
+                dbRef.update({
                   needLink: url
                 });
               }).catch(function(error) {
@@ -104,7 +104,7 @@
               });
           });
 
-        dbRef.set({
+        dbRef.update({
           title: document.forms["tradeForm"]["titlebox"].value,
           have: document.forms["tradeForm"]["havedescriptionbox"].value,
           need: document.forms["tradeForm"]["needdescriptionbox"].value
