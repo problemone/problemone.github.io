@@ -73,7 +73,7 @@
 
         var photoRef = imageFolder.child(title + '/have');  
 
-        photoRef.getDownloadURL().then(function(url) {
+        dbRef.getDownloadURL().then(function(url) {
             dbRef.set({
               haveLink: url
             });
@@ -87,7 +87,7 @@
 
         photoRef = imageFolder.child(title + '/need');  
 
-        photoRef.getDownloadURL().then(function(url) {
+        dbRef.getDownloadURL().then(function(url) {
             dbRef.set({
               needLink: url
             });
