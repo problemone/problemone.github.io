@@ -71,7 +71,7 @@
         var dbRef = firebase.database().ref("trades/" + title);
         var imageFolder = firebase.storage().ref('picFolder');
 
-        dbRef.once("value")    
+        imageFolder.once("value")    
           .then(function(snapshot){    
 
             var childData = snapshot.val();
