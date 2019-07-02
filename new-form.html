@@ -69,6 +69,36 @@
         task = needStorageRef.put(needFile);
 
         var dbRef = firebase.database().ref("trades/" + title);
+        var imageFolder = firebase.storage().ref('picFolder');
+
+        var childData = childSnapshot.val();
+
+        var photoRef = imageFolder.child(childData.title + '/have');  
+        photoRef.getDownloadURL().then(function(url) {
+            dbRef.set({
+              haveLink: url
+            });
+          }).catch(function(error) {
+
+             switch (error.code) {
+              case 'storage/object-not-found':
+                break;
+            }
+          });
+
+        photoRef = imageFolder.child(childData.title + '/need');  
+
+        photoRef.getDownloadURL().then(function(url) {
+            dbRef.set({
+              needLink: url
+            });
+          }).catch(function(error) {
+
+             switch (error.code) {
+              case 'storage/object-not-found':
+                break;
+            }
+          });
 
         dbRef.set({
           title: document.forms["tradeForm"]["titlebox"].value,
