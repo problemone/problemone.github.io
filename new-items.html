@@ -111,7 +111,7 @@
 					}
 
 					function changeIt(_src){
-					    document.getElementById("body").innerHTML += "<div id = 'parent'><img id = 'child' onclick=\"removeIt(parent','child')\" style='top: 5%; left: 10%; width: 80%; height: auto; position: fixed;' src = '" + _src + "'/></div>";
+					    document.getElementById("body").innerHTML += "<div id = 'parent'><img id = 'child' onclick=\"removeIt('parent','child')\" style='top: 5%; left: 10%; width: 80%; height: auto; position: fixed;' src = '" + _src + "'/></div>";
 					}
 
 					var imageFolder = firebase.storage().ref('picFolder');
