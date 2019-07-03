@@ -105,7 +105,7 @@
 					var link;
 
 					function changeIt(_src){
-					    document.getElementById("body").innerHTML += "<img onclick='changeIt(this.src)' style='width: 5%; height: auto; float: center; position: sticky;' src = '" + _src + "'/>";
+					    document.getElementById("body").innerHTML += "<img onclick='changeIt(this.src)' style='top: 3%; width: 50%; height: auto; float: center; position: fixed;' src = '" + _src + "'/>";
 					}
 
 					var imageFolder = firebase.storage().ref('picFolder');
