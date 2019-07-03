@@ -106,6 +106,11 @@
 
 					var link;
 
+					function removeBoth(_idParent1, _idChild1, _idParent2, _idChild2){
+						removeIt(_idParent1, _idChild1);
+						removeIt(_idParent2, _idChild2);
+					}
+
 					function removeIt(_idParent, _idChild){
         				var parent = document.getElementById(_idParent);
         				var child = document.getElementById(_idChild);
@@ -113,7 +118,7 @@
 					}
 
 					function changeIt(_src){
-					    document.getElementById("body").innerHTML += "<div class = 'lightbox' id = 'parent" + divs + "'><img id = 'child' onclick=\"removeIt('parent" + divs + "','child')\" style='top: 5%; width: 96%; height: 90%; left: 2%; position: fixed;' src = '" + _src + "'/><div style = 'position: fixed; left: 5%; top: 10%; color: rgb(200, 200, 200);'>Click To Close</div></div>";
+					    document.getElementById("body").innerHTML += "<div class = 'lightbox' id = 'parent" + divs + "'><img id = 'child' style='top: 5%; width: 96%; height: 90%; left: 2%; position: fixed;' src = '" + _src + "'/><img id = 'childX' onclick=\"removeBoth('parent" + divs + "','child', 'parent" + divs + "','childX'); \" style='top: 5%; width: 5%; height: 5%; right: 5%; position: fixed;' src = 'item_pictures/blankpictures.png'/></div>";
 					    divs ++;
 					}
 
