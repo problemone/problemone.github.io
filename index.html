@@ -142,6 +142,11 @@
   				background-size: cover;
 			}
 
+			#triangleStill{
+				 opacity: 0; 
+				 transition: 1s;
+			}
+
 			/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 			@media only screen and (max-device-width: 800px) {
   				.parHome {
@@ -169,7 +174,7 @@
 		</ul>
 
 		<div class="parHome">
-			<div id = "triangleStill" class="text" style = "display: inline-block; opacity: 0; transition: 1s;">
+			<div id = "triangleStill" class="text" style = "display: inline-block;">
 				<script>
 					setTimeout(function(){
 						document.getElementById(triangleStill).style.opacity = 1;
