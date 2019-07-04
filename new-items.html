@@ -118,7 +118,7 @@
 					}
 
 					function changeIt(_src){
-					    document.getElementById("body").innerHTML += "<div class = 'lightbox' id = 'parent" + divs + "'><img id = 'child' style='top: 5%; width: auto; height: 90%; display: block; text-align: center; position: fixed;' src = '" + _src + "'/><img id = 'childX' onclick=\"removeBoth('parent" + divs + "','child', 'parent" + divs + "','childX'); \" style='top: 8%; width: 5%; height: auto; right: 5%; position: fixed;' src = 'item_pictures/xButton.png'/></div>";
+					    document.getElementById("body").innerHTML += "<div class = 'lightbox' id = 'parent" + divs + "'><img id = 'child' style='top: 5%; width: auto; height: 90%; display: block; left-margin: auto; right-margin: auto; position: fixed;' src = '" + _src + "'/><img id = 'childX' onclick=\"removeBoth('parent" + divs + "','child', 'parent" + divs + "','childX'); \" style='top: 8%; width: 5%; height: auto; right: 5%; position: fixed;' src = 'item_pictures/xButton.png'/></div>";
 					    divs ++;
 					}
 
