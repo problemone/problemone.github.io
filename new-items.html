@@ -129,10 +129,7 @@
 		<div class="parallax"> <div class="item"> <div class="centered"> <div style="font-size:15vw; color: #ffffff">
 			Mercatio
 		</div></div>
-			<div style="position: absolute; font-size:10vw; color: #aaaaaa; top: 45%">
-				<div style="float: left; left: 15%; display: inline-block">I have:</div>
-				<div style="float: right; right: 15%; display: inline-block">I need:</div>
-			</div>
+
 			</div>
 		</div>
 		
@@ -172,7 +169,7 @@
 							photoRef.getDownloadURL().then(function(url) {
 								var photoRefNeed = imageFolder.child(childData.title + '/need');
 								photoRefNeed.getDownloadURL().then(function(needurl) {
-										document.getElementById("body").innerHTML += "<div class = 'parent'><img onclick='changeIt(this.src)' style='left: 8.897%; top: 105px; width: 27.5%; height: 415px; float: left' src = '" + url + "' class = 'photo1'/><img onclick='changeIt(this.src)' style='position: absolute; right: 9.241%; top: 105px; width: 27.5%; height: 415px; float: right' src = '" + needurl + "' class = 'photo1'/><div style = 'position: absolute; right: 10%; top: 65%; color: rgb(200, 200, 200);'>Click To Enlarge</div><div style = 'position: absolute; left: 10%; top: 65%; color: rgb(200, 200, 200);'>Click To Enlarge</div><div>";
+										document.getElementById("body").innerHTML += "<div class = 'parent'><div style='position: absolute; font-size:10vw; color: #aaaaaa; top: 45%''><div style='float: left; left: 15%; display: inline-block'>I have:</div><div style='float: right; right: 15%; display: inline-block'>I need:</div></div><img onclick='changeIt(this.src)' style='left: 8.897%; top: 105px; width: 27.5%; height: 415px; float: left' src = '" + url + "' class = 'photo1'/><img onclick='changeIt(this.src)' style='position: absolute; right: 9.241%; top: 105px; width: 27.5%; height: 415px; float: right' src = '" + needurl + "' class = 'photo1'/><div style = 'position: absolute; right: 10%; top: 65%; color: rgb(200, 200, 200);'>Click To Enlarge</div><div style = 'position: absolute; left: 10%; top: 65%; color: rgb(200, 200, 200);'>Click To Enlarge</div><div>";
 									}).catch(function(error) {
 
 								  switch (error.code) {
