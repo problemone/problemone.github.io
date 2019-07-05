@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style = "background: url(item_pictures/newItemsBackground.gif)  no-repeat center center; background-size: 100% 100%; background-attachment: fixed;">
+<html>
 	<head id = "head">
 		<style>
 			.navbar {
@@ -55,6 +55,10 @@
   				height: 100%;
 			}
 			
+			body {
+				background-color: #000000;
+			}
+			
 			.active {
  				background-color: #2C778F;
 			}
@@ -108,16 +112,16 @@
 	<body id = "body" style="margin:0;">
 		<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
     	<script src="firebaseInit.js"></script>
-    <div class="navbar">
+    <div class="navbar"><strong>
       <a href="/index.html">Home</a>
       <a href="/new-items.html">New Items</a>
       <a href="/new-form.html">Add An Item</a>
       <a href="/my-items.html">My Items</a>
       <a class="active" href="/rules.html">Rules</a>
-    </div>
+    </div></strong>
 
-    <div class="main">
-      <h1>Rules:</h1>
+    <div class="main" style="font-color: white">
+      <br ><br ><h1>Rules:</h1>
       <br ><br >
       <h3>By using Mercatio, you, the user, must agree to the following terms before continuing. If some trade violates <strong>any</strong> of these rules, we maintain the right to remove the trade.</h3><br >
       <p>1. Every item that is a "Have", or an item that you are willing to trade, you must already own, and <strong>can not</strong> be stolen, borrowed, or rented.</p>
