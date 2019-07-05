@@ -158,6 +158,17 @@
 					    divs ++;
 					}
 
+					function GetSubstringIndex(str, substring, n) {
+					    var times = 0, index = null;
+
+					    while (times < n && index !== -1) {
+					        index = str.indexOf(substring, index+1);
+					        times++;
+					    }
+
+					    return index;
+					}
+
 					var imageFolder = firebase.storage().ref('picFolder');
 
 					var tradeRef = firebase.database().ref("trades");
@@ -170,7 +181,11 @@
 							photoRef.getDownloadURL().then(function(url) {
 								var photoRefNeed = imageFolder.child(childData.title + '/need');
 								photoRefNeed.getDownloadURL().then(function(needurl) {
-										document.getElementById("body").innerHTML += "<div class = 'parent'><div style='font-size:3vw; color: #000000;''><div style='position: absolute; float: left; left: 9%; top: 70%; display: inline-block; font-family: \"Permanent Marker\";'>I have:</div><div style='position: absolute; float: right; right: 27%; top: 70%; display: inline-block; font-family: \"Permanent Marker\";'>I need:</div></div><img onclick='changeIt(this.src)' style='left: 8.897%; top: 105px; width: 27.5%; height: 415px; float: left' src = '" + url + "' class = 'photo1'/><img onclick='changeIt(this.src)' style='position: absolute; right: 9.241%; top: 105px; width: 27.5%; height: 415px; float: right' src = '" + needurl + "' class = 'photo1'/><div style = 'position: absolute; right: 10%; top: 65%; color: rgb(200, 200, 200); font-size: 2vw;'>Click To Enlarge</div><div style = 'position: absolute; left: 10%; top: 65%; color: rgb(200, 200, 200); font-size: 2vw;'>Click To Enlarge</div><div>";
+										var haveText = childData.have;
+										var needText = childData.need;
+										haveText = haveText.substring(0, GetSubstringIndex(haveText, " ", 5));
+										needText = needText.substring(0, GetSubstringIndex(needText, " ", 5));
+										document.getElementById("body").innerHTML += "<div class = 'parent'><div style='font-size:3vw; color: #000000;''><div style='position: absolute; float: left; left: 9%; top: 70%; display: inline-block; font-family: \"Permanent Marker\";'>I have:<br>" + needText + "</div><div style='position: absolute; float: right; right: 27%; top: 70%; display: inline-block; font-family: \"Permanent Marker\";'>I need:<br>" + needText + "</div></div><img onclick='changeIt(this.src)' style='left: 8.897%; top: 105px; width: 27.5%; height: 415px; float: left' src = '" + url + "' class = 'photo1'/><img onclick='changeIt(this.src)' style='position: absolute; right: 9.241%; top: 105px; width: 27.5%; height: 415px; float: right' src = '" + needurl + "' class = 'photo1'/><div style = 'position: absolute; right: 10%; top: 65%; color: rgb(200, 200, 200); font-size: 2vw;'>Click To Enlarge</div><div style = 'position: absolute; left: 10%; top: 65%; color: rgb(200, 200, 200); font-size: 2vw;'>Click To Enlarge</div><div>";
 									}).catch(function(error) {
 
 								  switch (error.code) {
