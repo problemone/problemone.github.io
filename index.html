@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 
-<script src="https://apis.google.com/js/platform.js" async defer>
-	function onSignIn(googleUser) {
-	  var profile = googleUser.getBasicProfile();
-	  console.log('Name: ' + profile.getName());
-	  console.log('Email: ' + profile.getEmail());
-	}
-</script>
-
-<meta name="google-signin-client_id" content="636102143870-8i07b8oaad6rm2gj9vki4fttbdib7vvd.apps.googleusercontent.com">
-
 <html>
+	<script src="https://apis.google.com/js/platform.js" async defer>
+		function onSignIn(googleUser) {
+		  var profile = googleUser.getBasicProfile();
+		  console.log('Name: ' + profile.getName());
+		  console.log('Email: ' + profile.getEmail());
+		}
+	</script>
+
+	<meta name="google-signin-client_id" content="636102143870-8i07b8oaad6rm2gj9vki4fttbdib7vvd.apps.googleusercontent.com">
 	<head>
 		<meta charset=”utf-8″>
 		<style>
