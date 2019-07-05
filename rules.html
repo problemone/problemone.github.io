@@ -1,1 +1,131 @@
-awesfawefawe
+<!DOCTYPE html>
+<html style = "background: url(item_pictures/newItemsBackground.gif)  no-repeat center center; background-size: 100% 100%; background-attachment: fixed;">
+	<head id = "head">
+		<style>
+			.navbar {
+  				overflow: hidden;
+  				background-color: #333;
+  				position: fixed; /* Set the navbar to fixed position */
+  				top: 0; /* Position the navbar at the top of the page */
+				
+				/*Stops text from going over the nav bar*/
+				z-index: 500000000000000000000000000000000000000000000;
+  				width: 100%; /* Full width */
+			}
+			/* Links inside the navbar */
+			.navbar a {
+  				float: left;
+  				display: block;
+  				color: #f2f2f2;
+  				text-align: center;
+  				padding: 14px 16px;
+  				text-decoration: none;
+			}
+			/* Change background on mouse-over */
+			.navbar a:hover {
+  				background: #ddd;
+  				color: black;
+			}
+			/* Main content */
+			.main {
+  				margin-top: 30px; /* Add a top margin to avoid content overlay */
+			}
+			
+			ul {
+  				list-style-type: none;
+  				margin: 0;
+  				padding: 0;
+  				overflow: hidden;
+  				background-color: #333;
+			}
+			li {
+  				float: left;
+			}
+			li a {
+  				display: block;
+  				color: white;
+  				text-align: center;
+  				padding: 14px 16px;
+  				text-decoration: none;
+			}
+			li a:hover {
+  				background-color: #111;
+			}
+			body, html {
+  				height: 100%;
+			}
+			
+			.active {
+ 				background-color: #2C778F;
+			}
+			
+			/* Centered text */
+			.centered {
+				position: absolute;
+  				top: 25%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+			}
+			
+			.item {
+				background-color: rgb(0, 0, 0);
+			}
+			
+			.parallax {
+	  			/*background-image: url('');*/
+  				height: 60%; 
+  				background-attachment: fixed;
+  				background-position: center;
+  				background-repeat: no-repeat;
+  				background-size: cover;
+			}
+			#body {
+				text-align: center;
+			}
+			.parent {
+				background: url(item_pictures/blankpictures.png);
+				background-size: 100% 750px;
+				background-repeat: no-repeat;
+				min-height: 750px;
+				min-width: 100%;
+				position: relative;
+				display: inline-block;
+			}
+			.photo1{
+				display: inline-block;
+				position: absolute;
+			}
+			/*
+			#rectcorners {
+			  border-radius: 25px;
+			  border: 2px solid #73AD21;
+			  padding: 20px; 
+			  width: 350px;
+			  height: 600px; 
+			}*/
+		</style>
+	</head>
+	<body id = "body" style="margin:0;">
+		<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    	<script src="firebaseInit.js"></script>
+    <div class="navbar">
+      <a href="/index.html">Home</a>
+      <a href="/new-items.html">New Items</a>
+      <a href="/new-form.html">Add An Item</a>
+      <a href="/my-items.html">My Items</a>
+      <a class="active" href="/rules.html">Rules</a>
+    </div>
+
+    <div class="main">
+      <h1>Rules:</h1>
+      <br ><br >
+      <h3>By using Mercatio, you, the user, must agree to the following terms before continuing. If some trade violates <strong>any</strong> of these rules, we maintain the right to remove the trade.</h3><br >
+      <p>1. Every item that is a "Have", or an item that you are willing to trade, you must already own, and <strong>can not</strong> be stolen, borrowed, or rented.</p>
+      <p>2. When a trade is initiated between two users, both users have to have the items at the time of trade.</p>
+      <p>3. All items being traded, and being set up for trade, must be school appropriate, if you wouldn't give it to a teacher, you can't give it to a student.</p>
+      <br ><br >
+      <h1>Privacy Policy:</h1>
+      <h3>Coming soon...</h3>
+    </div>
+   </body>
+  </html>
