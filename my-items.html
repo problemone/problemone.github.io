@@ -1,32 +1,30 @@
 <!doctype html>
 <html style="text-align: center; " class="gr__problemone_github_io"><head><style>
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-    }
-
-    li {
-        float: left;
-    }
-
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-
-    li a:hover {
-        background-color: #111;
-    }
-
-    .active {
-      background-color: #2C778F;
-    }
+    .navbar {
+  				overflow: hidden;
+  				background-color: #333;
+  				position: fixed; /* Set the navbar to fixed position */
+  				top: 0; /* Position the navbar at the top of the page */
+  				width: 100%; /* Full width */
+			}
+			/* Links inside the navbar */
+			.navbar a {
+  				float: left;
+  				display: block;
+  				color: #f2f2f2;
+  				text-align: center;
+  				padding: 14px 16px;
+  				text-decoration: none;
+			}
+			/* Change background on mouse-over */
+			.navbar a:hover {
+  				background: #ddd;
+  				color: black;
+			}
+			/* Main content */
+			.main {
+  				margin-top: 30px; /* Add a top margin to avoid content overlay */
+			}
     
   </style>
 
@@ -35,12 +33,12 @@
   </header>
 
   
-    <ul>
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/new-items.html">New Items</a></li>
-      <li><a href="/new-form.html">Add An Item</a></li>
-      <li><a class="active" href="/my-items.html">My Items</a></li>
-    </ul>
+    <div class="navbar">
+      <a href="/index.html">Home</a>
+      <a href="/new-items.html">New Items</a>
+      <a href="/new-form.html">Add An Item</a>
+      <a class="active" href="/my-items.html">My Items</a>
+    </div>
 
     <h1>My Items Listed</h1>
     <br>
@@ -48,9 +46,9 @@
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
     <script src="firebaseInit.js"></script>
 
-    /* <script>
+    /*
     Insert Script here for getting data submitted by user
-    </script> */
+    */
 
   
 
