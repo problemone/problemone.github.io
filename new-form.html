@@ -95,13 +95,13 @@
         var haveButton = document.getElementById("haveUpload");
         var haveFile = haveButton.files[0];
         if(haveFile == ''){
-          haveFile = new Image();
+          haveFile = document.createElement("img");
           haveFile.src = "item_pictures/no-picutre.jpg";
         }
         var needButton = document.getElementById("needUpload");
         var needFile = needButton.files[0];
         if(needFile == ''){
-          needFile = new Image();
+          needFile = new document.createElement("img");
           needFile.src = "item_pictures/no-picutre.jpg";
         }
 
