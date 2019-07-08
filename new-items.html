@@ -164,7 +164,9 @@
 					    while (times < n && index !== -1) {
 					        index = str.indexOf(substring, index+1);
 					        times++;
-					        if(str.indexOf(substring, index+1) < 0) break;
+					        if(str.indexOf(substring, index+1) < 0){
+					        	break;
+					        }
 					    }
 
 					    return index;
