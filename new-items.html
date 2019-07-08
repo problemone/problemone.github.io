@@ -186,10 +186,10 @@
 								var photoRefNeed = imageFolder.child(childData.title + '/need');
 								photoRefNeed.getDownloadURL().then(function(needurl) {
 										haveText = childData.have;
-										needText = childData.need;
 										haveText = haveText.substring(0, GetSubstringIndex(haveText, " ", 5)) + "...";
-										needText = needText.substring(0, GetSubstringIndex(needText, " ", 5)) + "...";
 										console.log(haveText);
+										needText = childData.need;
+										needText = needText.substring(0, GetSubstringIndex(needText, " ", 5)) + "...";
 										console.log(needText);
 										document.getElementById("body").innerHTML += "<div class = 'parent'><div style='font-size:2.5vw; color: #000000;''><div style='position: absolute; float: left; left: 9%; top: 70%; display: inline-block; font-family: \"Permanent Marker\";'>I have:<br>" + haveText + "</div><div style='position: absolute; float: left; left: 63.5%; top: 70%; display: inline-block; font-family: \"Permanent Marker\";'>I need:<br>" + needText + "</div></div><img onclick='changeIt(this.src)' style='left: 8.897%; top: 105px; width: 27.5%; height: 415px; float: left' src = '" + url + "' class = 'photo1'/><img onclick='changeIt(this.src)' style='position: absolute; right: 9.241%; top: 105px; width: 27.5%; height: 415px; float: right' src = '" + needurl + "' class = 'photo1'/><div style = 'position: absolute; right: 10%; top: 65%; color: rgb(200, 200, 200); font-size: 2vw;'>Click To Enlarge</div><div style = 'position: absolute; left: 10%; top: 65%; color: rgb(200, 200, 200); font-size: 2vw;'>Click To Enlarge</div></div>";
 									}).catch(function(error) {
