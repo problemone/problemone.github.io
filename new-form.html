@@ -96,6 +96,10 @@
         var haveFile = haveButton.files[0];
         var needButton = document.getElementById("needUpload");
         var needFile = needButton.files[0];
+        if(needFile == ''){
+          needFile = new Image();
+          needfile.src = "item_pictures/no-picutre.jpg";
+        }
 
         var haveStorageRef = firebase.storage().ref('picFolder/' + title + '/have');
         var needStorageRef = firebase.storage().ref('picFolder/' + title + '/need');
