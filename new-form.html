@@ -94,11 +94,15 @@
 
         var haveButton = document.getElementById("haveUpload");
         var haveFile = haveButton.files[0];
+        if(haveFile == ''){
+          haveFile = new Image();
+          haveFile.src = "item_pictures/no-picutre.jpg";
+        }
         var needButton = document.getElementById("needUpload");
         var needFile = needButton.files[0];
         if(needFile == ''){
           needFile = new Image();
-          needfile.src = "item_pictures/no-picutre.jpg";
+          needFile.src = "item_pictures/no-picutre.jpg";
         }
 
         var haveStorageRef = firebase.storage().ref('picFolder/' + title + '/have');
