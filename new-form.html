@@ -92,22 +92,27 @@
 
         var title = document.forms["tradeForm"]["title"].value;
 
+        var haveStorageRef = firebase.storage().ref('picFolder/' + title + '/have');
+        var needStorageRef = firebase.storage().ref('picFolder/' + title + '/need');
+
+        var task;
+
         var haveButton = document.getElementById("haveUpload");
         var haveFile = haveButton.files[0];
         if(haveFile == ''){
           haveFile = "item_pictures/no-picutre.jpg";
+        }
+        else{
+          task = haveStorageRef.put(haveFile);
         }
         var needButton = document.getElementById("needUpload");
         var needFile = needButton.files[0];
         if(needFile == ''){
           needFile = "item_pictures/no-picutre.jpg";
         }
-
-        var haveStorageRef = firebase.storage().ref('picFolder/' + title + '/have');
-        var needStorageRef = firebase.storage().ref('picFolder/' + title + '/need');
-
-        var task = haveStorageRef.put(haveFile);
-        task = needStorageRef.put(needFile);
+        else{
+          task = needStorageRef.put(needFile);
+        }
 
         var dbRef = firebase.database().ref("trades/" + title);
 
