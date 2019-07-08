@@ -162,6 +162,7 @@
 					    var times = 0, index = null;
 
 					    while (times < n && index !== -1) {
+					    	if(str.indexOf(substring, index+1) < 0) break;
 					        index = str.indexOf(substring, index+1);
 					        times++;
 					    }
