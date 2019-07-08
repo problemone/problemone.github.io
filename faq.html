@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head id = "head">
+		<style>
+			.navbar {
+  				overflow: hidden;
+  				background-color: #333;
+  				position: fixed; /* Set the navbar to fixed position */
+  				top: 0; /* Position the navbar at the top of the page */
+				
+				/*Stops text from going over the nav bar*/
+				z-index: 500000000000000000000000000000000000000000000;
+  				width: 100%; /* Full width */
+			}
+			/* Links inside the navbar */
+			.navbar a {
+  				float: left;
+  				display: block;
+  				color: #f2f2f2;
+  				text-align: center;
+  				padding: 14px 16px;
+  				text-decoration: none;
+			}
+			/* Change background on mouse-over */
+			.navbar a:hover {
+  				background: #ddd;
+  				color: black;
+			}
+			/* Main content */
+			.main {
+  				margin-top: 30px; /* Add a top margin to avoid content overlay */
+			}
+			
+			ul {
+  				list-style-type: none;
+  				margin: 0;
+  				padding: 0;
+  				overflow: hidden;
+  				background-color: #333;
+			}
+			li {
+  				float: left;
+			}
+			li a {
+  				display: block;
+  				color: white;
+  				text-align: center;
+  				padding: 14px 16px;
+  				text-decoration: none;
+			}
+			li a:hover {
+  				background-color: #111;
+			}
+			body, html {
+  				height: 100%;
+			}
+			
+			body {
+				background-color: #000000;
+			}
+			
+			.active {
+ 				background-color: #2C778F;
+			}
+			
+			/* Centered text */
+			.centered {
+				position: absolute;
+  				top: 25%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+			}
+			
+			.item {
+				background-color: rgb(0, 0, 0);
+			}
+			
+			.parallax {
+	  			/*background-image: url('');*/
+  				height: 60%; 
+  				background-attachment: fixed;
+  				background-position: center;
+  				background-repeat: no-repeat;
+  				background-size: cover;
+			}
+			#body {
+				text-align: center;
+			}
+			.parent {
+				background: url(item_pictures/blankpictures.png);
+				background-size: 100% 750px;
+				background-repeat: no-repeat;
+				min-height: 750px;
+				min-width: 100%;
+				position: relative;
+				display: inline-block;
+			}
+			.photo1{
+				display: inline-block;
+				position: absolute;
+			}
+			
+			h1 {
+  				font-size: 36px; /* Some tweener fallback that doesn't look awful */ 
+  				font-size: 5.4vw;  
+			}
+			
+			h2 {
+  				font-size: 3.0vh;
+			}
+			
+			p {
+  				font-size: 2vmin;
+			}
+			/*
+			#rectcorners {
+			  border-radius: 25px;
+			  border: 2px solid #73AD21;
+			  padding: 20px; 
+			  width: 350px;
+			  height: 600px; 
+			}*/
+		</style>
+	</head>
+	<body id = "body" style="margin:0;">
+		<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    	<script src="firebaseInit.js"></script>
+    <div class="navbar"><strong>
+      <a href="/index.html">Home</a>
+      <a href="/new-items.html">New Items</a>
+      <a href="/new-form.html">Add An Item</a>
+      <a class="active" href="/rules.html">Legal Stuff</a>
+    </div></strong>
+
+    <div class="main" style="color: white">
+      <h1>FAQ:</h1> <br > <br >
+      <h2>Q: What is the largest photo size that I can post?</h2>
+      <h2><strong>A: We are limited to 10 MB, otherwise, your photo might not show up on the items page. </strong></h2> <br >
+      <h2>Q: The person that I wanted to trade with didn't go through with it, what can I do?</h2>
+      <h2><strong>A: You can put the item and request back onto the page, allowing for other users to view it.</strong></h2> <br >
+      <h2>Q: What if my item is broken/not working, could I trade it?</h2>
+      <h2><strong>A: Yes, but you have to disclose it in the title or description, otherwise it may be taken down.</strong></h2><br >
+      <h2>Q: How many items can I trade in total?</h2>
+      <h2><strong>A: At the moment, as many as you  want, but repeats will be taken down.</strong></h2><br >
+      <h2>Q: Are there re-trades for items?</h2>
+      <h2><strong>A: Yes, but it has to be within 72 hours of the original trade.</strong></h2><br >
+      <h2>Q: What if I don't know what I want to trade or what I want from a trade?</h2>
+      <h2><strong>A: The trader must put, in the description of the missing item, an overall category of what they want, photos are not mandatory.</strong></h2><br >
+      <h2>Q: What happens if multiple people want my item?</h2>
+      <h2><strong>A: The entire system is based on first come first serve, so the first person who contacted you should be the person to follow through.</strong></h2><br >
+      <h2>Q: If I really want an item, could I use money to buy it?</h2>
+      <h2><strong>A: No, Mercatio should remain free of real world currency.</strong></h2><br >
+      <h2>Q: How many days should it take to trade an item?</h2>
+      <h2><strong>A: Once the trade is established, it should happen within 72 hours of agreement.</strong></h2><br >
+      <h2>Q: How long does it take for my trade to be live?</h2>
+      <h2><strong>A: It should be instantanious, if not, don't be afraid to contact us.</strong></h2><br >
+      <h2>Q: When can we trade among other schools?</h2>
+      <h2><strong>A: Mercatio is always growing, we will update everyone when these transactions are possible.</strong></h2><br > <br > <br >
+</p>
+    </div>
+   </body>
+  </html>
