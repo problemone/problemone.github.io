@@ -113,6 +113,22 @@
 			  width: 350px;
 			  height: 600px; 
 			}*/
+			
+			/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+			@media only screen and (max-device-width: 800px) {
+  				.parHome {
+    					background-attachment: scroll;
+  				}
+				.parNotebooks {
+    					background-attachment: scroll;
+  				}
+				.parPencils {
+    					background-attachment: scroll;
+  				}
+				.parErasers {
+    					background-attachment: scroll;
+  				}
+			}
 
 		</style>
 	</head>
@@ -124,7 +140,7 @@
   			<a href="/index.html">Home</a>
   			<a class="active" href="/new-items.html">New Items</a>
   			<a href="/new-form.html">Add An Item</a>
-			<a href="/my-items.html">My Items</a>
+			<a href="/rules.html">Legal Stuff</a>
 		</div>
 
 		<div class="parallax"> <div class="item"> <div class="centered"> <div style="font-size:15vw; color: #ffffff">
