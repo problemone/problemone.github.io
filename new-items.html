@@ -194,6 +194,7 @@
 							photoRef.getDownloadURL().then(function(url) {
 								var photoRefNeed = imageFolder.child(childData.title + '/need');
 								photoRefNeed.getDownloadURL().then(function(needurl) {
+										console.log(url + " " + needurl)
 										needText = childData.need;
 										if(needText.length > 18){
 											needText = needText.substring(0, 18) + "...";
