@@ -194,18 +194,18 @@
 							photoRef.getDownloadURL().then(function(url) {
 								var photoRefNeed = imageFolder.child(childData.title + '/need');
 								photoRefNeed.getDownloadURL().then(function(needurl) {
-										console.log(url + " " + needurl)
-										needText = childData.need;
-										if(needText.length > 18){
-											needText = needText.substring(0, 18) + "...";
-										}
-										haveText = childData.have;
-										if(haveText.length > 18){
-											haveText = haveText.substring(0, 18) + "...";
-										}
-										
-										document.getElementById("body").innerHTML += "<div class = 'parent'><div style='font-size:2.5vw; color: #000000;''><div style='position: absolute; float: left; left: 9%; top: 70%; display: inline-block; font-family: \"Permanent Marker\";'>I have:<br>" + haveText + "</div><div style='position: absolute; float: left; left: 63.5%; top: 70%; display: inline-block; font-family: \"Permanent Marker\";'>I need:<br>" + needText + "</div></div><img onclick='changeIt(this.src)' style='left: 8.897%; top: 105px; width: 27.5%; height: 415px; float: left' src = '" + url + "' class = 'photo1'/><img onclick='changeIt(this.src)' style='position: absolute; right: 9.241%; top: 105px; width: 27.5%; height: 415px; float: right' src = '" + needurl + "' class = 'photo1'/><div style = 'position: absolute; right: 10%; top: 65%; color: rgb(175, 175, 175); font-size: 2vw;'>Click To Enlarge</div><div style = 'position: absolute; left: 10%; top: 65%; color: rgb(175, 175, 175); font-size: 2vw;'>Click To Enlarge</div><div style='transform: translateX(-50%); left: 50%; position: absolute; font-size:5.5vw;  color: #888888; font-family: \"Permanent Marker\";'>" + childData.title + "</div></div>";
-									}).catch(function(error) {
+									console.log(url + " " + needurl)
+									needText = childData.need;
+									if(needText.length > 18){
+										needText = needText.substring(0, 18) + "...";
+									}
+									haveText = childData.have;
+									if(haveText.length > 18){
+										haveText = haveText.substring(0, 18) + "...";
+									}
+									
+									document.getElementById("body").innerHTML += "<div class = 'parent'><div style='font-size:2.5vw; color: #000000;''><div style='position: absolute; float: left; left: 9%; top: 70%; display: inline-block; font-family: \"Permanent Marker\";'>I have:<br>" + haveText + "</div><div style='position: absolute; float: left; left: 63.5%; top: 70%; display: inline-block; font-family: \"Permanent Marker\";'>I need:<br>" + needText + "</div></div><img onclick='changeIt(this.src)' style='left: 8.897%; top: 105px; width: 27.5%; height: 415px; float: left' src = '" + url + "' class = 'photo1'/><img onclick='changeIt(this.src)' style='position: absolute; right: 9.241%; top: 105px; width: 27.5%; height: 415px; float: right' src = '" + needurl + "' class = 'photo1'/><div style = 'position: absolute; right: 10%; top: 65%; color: rgb(175, 175, 175); font-size: 2vw;'>Click To Enlarge</div><div style = 'position: absolute; left: 10%; top: 65%; color: rgb(175, 175, 175); font-size: 2vw;'>Click To Enlarge</div><div style='transform: translateX(-50%); left: 50%; position: absolute; font-size:5.5vw;  color: #888888; font-family: \"Permanent Marker\";'>" + childData.title + "</div></div>";
+								}).catch(function(error) {
 
 								  switch (error.code) {
 								    case 'storage/object-not-found':
