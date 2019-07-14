@@ -98,19 +98,14 @@
         var task;
 
         var haveButton = document.getElementById("haveUpload");
-        var haveFile = haveButton.files[0];
-        if(haveFile == ''){
-          haveFile = "item_pictures/no-picutre.jpg";
-        }
-        else{
+        if(haveButton.value){
+          var haveFile = haveButton.files[0];
           task = haveStorageRef.put(haveFile);
         }
+
         var needButton = document.getElementById("needUpload");
-        var needFile = needButton.files[0];
-        if(needFile == ''){
-          needFile = "item_pictures/no-picutre.jpg";
-        }
-        else{
+        if(needButton.value){
+          var needFile = needButton.files[0];
           task = needStorageRef.put(needFile);
         }
 
@@ -160,8 +155,6 @@
       <br>
       <button type="submit" class="submitbutton">Submit</button>
     </form>
-
-    <img style = 'display: none' src = '/item_pictures/no-picture.jpg'>
 
     <script>
       document.getElementById('userForm').addEventListener('submit', dataSaver);
