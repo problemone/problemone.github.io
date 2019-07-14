@@ -218,17 +218,18 @@
 
 							  switch (error.code) {
 							    case 'storage/object-not-found':
-							      	document.getElementById("body").innerHTML += "<img onclick='changeIt(this.src)' style='left: 8.897%; top: 105px; width: 27.5%; height: 415px; float: left' src = '" + url + "' class = 'photo1'/>"
+							      	document.getElementById("body").innerHTML += "<img onclick='changeIt(this.src)' style='left: 8.897%; top: 105px; width: 27.5%; height: 415px; float: left' src = '/item_pictures/no-picture.jpg' class = 'photo1'/>"
 							      	var photoRefNeed = imageFolder.child(childData.title + '/need');
 									photoRefNeed.getDownloadURL().then(function(needurl) {								
-											document.getElementById("body").innerHTML += "<img onclick='changeIt(this.src)' style='left: 8.897%; top: 105px; width: 27.5%; height: 415px; float: left' src = '" + url + "' class = 'photo1'/><img onclick='changeIt(this.src)' style='position: absolute; right: 9.241%; top: 105px; width: 27.5%; height: 415px; float: right' src = '" + needurl + "' class = 'photo1'/>";
+											document.getElementById("body").innerHTML += "<img onclick='changeIt(this.src)' style='position: absolute; right: 9.241%; top: 105px; width: 27.5%; height: 415px; float: right' src = '" + needurl + "' class = 'photo1'/>";
 										}).catch(function(error) {
 
-									  switch (error.code) {
-									    case 'storage/object-not-found':
-									      document.getElementById("body").innerHTML += "<img onclick='changeIt(this.src)' style='position: absolute; right: 9.241%; top: 105px; width: 27.5%; height: 415px; float: right' src = '/item_pictures/no-picture.jpg' class = 'photo1'/>";
-									  }
-									});
+										  switch (error.code) {
+										    case 'storage/object-not-found':
+										      document.getElementById("body").innerHTML += "<img onclick='changeIt(this.src)' style='position: absolute; right: 9.241%; top: 105px; width: 27.5%; height: 415px; float: right' src = '/item_pictures/no-picture.jpg' class = 'photo1'/>";
+										  }
+										});
+									};
 							  }
 							});
 
