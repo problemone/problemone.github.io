@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html style = "background: url(item_pictures/newItemsBackground.gif)  no-repeat center center; background-size: 100% 100%; background-attachment: fixed;">
 	<link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
+	<meta name="google-signin-client_id" content="636102143870-c8c668p8drhtcubntma9f6cntnm6pa89.apps.googleusercontent.com">
 	<head id = "head">
 		<title>New Items</title>
 		<link rel="icon" href="/item_pictures/logo.ico"/>
@@ -128,6 +129,15 @@
   			<a href="/new-form.html">Add An Item</a>
 			<a href="/rules.html">Legal Stuff</a>
 			<a href="/faq.html">FAQ</a>
+			<a href="#" onclick="signOut();" style = "float: right; right: 5%">Sign out</a>
+			<script>
+			  function signOut() {
+			    var auth2 = gapi.auth2.getAuthInstance();
+			    auth2.signOut().then(function () {
+			      console.log('User signed out.');
+			    });
+			  }
+			</script>
 		</div></strong>
 
 		<div class="parallax"> <div class="item"> <div class="centered"> <div style="font-size:15.5vw; color: #000000">
