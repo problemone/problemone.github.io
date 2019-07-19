@@ -2,7 +2,17 @@
 <html style = "background: url(item_pictures/newItemsBackground.gif)  no-repeat center center; background-size: 100% 100%; background-attachment: fixed;">
 	<link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
 	<meta name="google-signin-client_id" content="636102143870-c8c668p8drhtcubntma9f6cntnm6pa89.apps.googleusercontent.com">
+
+	<script src="https://apis.google.com/js/platform.js" async defer>
+		function onSignIn(googleUser) {
+		  var profile = googleUser.getBasicProfile();
+		  console.log('Name: ' + profile.getName());
+		  console.log('Email: ' + profile.getEmail());
+		}
+	</script>
+
 	<head id = "head">
+		<div class="g-signin2" data-onsuccess="onSignIn" style = "position: absolute; top: 75%; left: 50%; transform: translate(-50%, -50%);"></div>
 		<title>New Items</title>
 		<link rel="icon" href="/item_pictures/logo.ico"/>
 		<style>
