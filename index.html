@@ -3,8 +3,9 @@
 <html>
 	<meta name="google-signin-client_id" content="636102143870-c8c668p8drhtcubntma9f6cntnm6pa89.apps.googleusercontent.com">
 	<script src="https://apis.google.com/js/platform.js" async defer>
+		var profile;
 		function onSignIn(googleUser) {
-		  var profile = googleUser.getBasicProfile();
+		  profile = googleUser.getBasicProfile();
 		  console.log('Name: ' + profile.getName());
 		  console.log('Email: ' + profile.getEmail());
 		}
@@ -278,7 +279,7 @@
 		</style>
 		<link rel="icon" href="/item_pictures/logo.ico"/>
 	</head>
-	<body style="margin:0;">
+	<body id = "body" style="margin:0;">
 
 		<div class="navbar"><strong>
   			<a class="active" href="/index.html">Home</a>
@@ -287,7 +288,7 @@
 			<a href="/rules.html">Legal Stuff</a>
 			<a href="/faq.html">FAQ</a>
 			<div class="dropdown" style = "float: right; right: 5%">
-    				<button class="dropbtn">My Profile
+    				<button class="dropbtn"><script> document.getElementById("body").innerHTML += "profile.getName()" </script>
 				<!--<i class="fa fa-caret-down"></i>-->
 				</button>
 			        <div class="dropdown-content">
