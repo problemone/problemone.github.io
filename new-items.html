@@ -197,29 +197,29 @@
 			<a href="/rules.html">Legal Stuff</a>
 			<a href="/faq.html">FAQ</a>
 			<div class="dropdown" style = "float: right; right: 5%">
-    				<button class="dropbtn"><strong>My Profile</strong></button>
-				<!--<i class="fa fa-caret-down"></i>-->
-			        <div class="dropdown-content">
-                                	<!--<a href="#">Test1</a>-->
-      					<a href="#" onclick="signOut();">Sign out</a>
-					<script>
-	                    function signOut() {
-							var auth2 = gapi.auth2.getAuthInstance();
-							auth2.signOut().then(function () {
-							  auth2.disconnect();
-							  console.log("User signed out.")
-							});
-						}
+	            <button class="dropbtn"><strong>My Profile</strong></button>
+	        <!--<i class="fa fa-caret-down"></i>-->
+	              <div class="dropdown-content">
+	                                  <!--<a href="#">Test1</a>-->
+	                <a href="#" onclick="signOut();">Sign out</a>
+	                <script>
+	                  function signOut() {
+	                    var auth2 = gapi.auth2.getAuthInstance();
+	                    auth2.signOut().then(function () {
+	                      auth2.disconnect();
+	                      console.log("User signed out.")
+	                    });
+	                  }
 
-						function onLoad() {
-						    gapi.load('auth2', function() {
-						      gapi.auth2.init();
-						    });
+	                  function onLoad() {
+	                        gapi.load('auth2', function() {
+	                          gapi.auth2.init();
+	                        });
 	                    }
 	                </script>
 	                <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
-    				</div>
-  			</div> 
+	            </div>
+	        </div> 
 		</div></strong>
 
 		<div class="parallax"> <div class="item"> <div class="centered"> <div style="font-size:15.5vw; color: #000000">
