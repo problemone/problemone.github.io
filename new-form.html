@@ -146,7 +146,7 @@
               <div class="dropdown-content">
                                   <!--<a href="#">Test1</a>-->
                 <a href="#" onclick="signOut();">Sign out</a>
-                <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer>
+                <script>
                   function signOut() {
                     var auth2 = gapi.auth2.getAuthInstance();
                     auth2.signOut().then(function () {
@@ -161,6 +161,7 @@
                         });
                     }
                 </script>
+                <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
             </div>
         </div> 
     </div></strong>

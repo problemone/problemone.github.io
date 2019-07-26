@@ -202,21 +202,22 @@
 			        <div class="dropdown-content">
                                 	<!--<a href="#">Test1</a>-->
       					<a href="#" onclick="signOut();">Sign out</a>
-					<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer>
-						function signOut() {
-							var auth2 = gapi.auth2.getAuthInstance();
-							auth2.signOut().then(function () {
-								auth2.disconnect();
-								console.log("User signed out.")
-							});
-						}
+					<script>
+	                  function signOut() {
+	                    var auth2 = gapi.auth2.getAuthInstance();
+	                    auth2.signOut().then(function () {
+	                      auth2.disconnect();
+	                      console.log("User signed out.")
+	                    });
+	                  }
 
-						function onLoad() {
-					      	gapi.load('auth2', function() {
-					        	gapi.auth2.init();
-				      		});
-					    }
-					</script>
+	                  function onLoad() {
+	                        gapi.load('auth2', function() {
+	                          gapi.auth2.init();
+	                        });
+	                    }
+	                </script>
+	                <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
     				</div>
   			</div> 
 		</div></strong>
