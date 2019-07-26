@@ -10,19 +10,6 @@
 		  console.log('Name: ' + profile.getName());
 		  console.log('Email: ' + profile.getEmail());
 		}
-		function signOut() {
-			var auth2 = gapi.auth2.getAuthInstance();
-			auth2.signOut().then(function () {
-				auth2.disconnect();
-				console.log("User signed out.")
-			});
-		}
-
-		function onLoad() {
-	      	gapi.load('auth2', function() {
-	        	gapi.auth2.init();
-      		});
-	    }
 	</script>
 
 	<head id = "head">
@@ -215,6 +202,21 @@
 			        <div class="dropdown-content">
                                 	<!--<a href="#">Test1</a>-->
       					<a href="#" onclick="signOut();">Sign out</a>
+					<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer>
+						function signOut() {
+							var auth2 = gapi.auth2.getAuthInstance();
+							auth2.signOut().then(function () {
+								auth2.disconnect();
+								console.log("User signed out.")
+							});
+						}
+
+						function onLoad() {
+					      	gapi.load('auth2', function() {
+					        	gapi.auth2.init();
+				      		});
+					    }
+					</script>
     				</div>
   			</div> 
 		</div></strong>
