@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html style="text-align: center;">
-
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
   
   <meta name="google-signin-client_id" content="636102143870-8i07b8oaad6rm2gj9vki4fttbdib7vvd.apps.googleusercontent.com">
+
+  <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer>
+      var profile;
+      function onSignIn(googleUser) {
+        profile = googleUser.getBasicProfile();
+        console.log('Name: ' + profile.getName());
+        console.log('Email: ' + profile.getEmail());
+      }
+      function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+          auth2.disconnect();
+          console.log("User signed out.")
+        });
+      }
+
+      function onLoad() {
+            gapi.load('auth2', function() {
+              gapi.auth2.init();
+            });
+        }
+  </script>
+
   <style>
     ul {
         list-style-type: none;
@@ -139,15 +160,6 @@
               <div class="dropdown-content">
                                   <!--<a href="#">Test1</a>-->
                 <a href="#" onclick="signOut();">Sign out</a>
-                <script>
-                    function signOut() {
-                      var auth2 = gapi.auth2.getAuthInstance();
-                      auth2.signOut().then(function () {
-                        auth2.disconnect();
-                        console.log("User signed out.")
-                      });
-                    }
-                </script>
             </div>
         </div> 
     </div></strong>
