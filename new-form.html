@@ -118,28 +118,28 @@
 
   <body style = "margin:0;background: url(item_pictures/white.png) center top no-repeat, url(item_pictures/newItemsBackground.gif) left top no-repeat; background-size: 70% 100%, 100% 100%; background-attachment: fixed, fixed;">
     <div class="navbar"><strong>
-      <a href="/index.html">Home</a>
+      <a class="active" href="/index.html">Home</a>
       <a href="/new-items.html">New Items</a>
-      <a class="active" href="/new-form.html">Add An Item</a>
+      <a href="/new-form.html">Add An Item</a>
       <a href="/rules.html">Legal Stuff</a>
       <a href="/faq.html">FAQ</a>
       <div class="dropdown" style = "float: right; right: 5%">
-          <button class="dropbtn"><strong>My Profile</strong></button>
-      <!--<i class="fa fa-caret-down"></i>-->
-            <div class="dropdown-content">
-                                <!--<a href="#">Test1</a>-->
-              <a href="#" onclick="signOut();">Sign out</a>
-        <script>
-            function signOut() {
-                var auth2 = gapi.auth2.getAuthInstance();
-              auth2.signOut().then(function () {
-                console.log("User signed out.")
-              });
-              auth2.disconnect();
-            }
-        </script>
-          </div>
-      </div> 
+            <button class="dropbtn"><strong>My Profile</strong></button>
+        <!--<i class="fa fa-caret-down"></i>-->
+              <div class="dropdown-content">
+                                  <!--<a href="#">Test1</a>-->
+                <a href="#" onclick="signOut();">Sign out</a>
+                <script>
+                    function signOut() {
+                        var auth2 = gapi.auth2.getAuthInstance();
+                      auth2.signOut().then(function () {
+                        console.log("User signed out.")
+                      });
+                      auth2.disconnect();
+                    }
+                </script>
+            </div>
+        </div> 
     </div></strong>
 
     <h1 style="font-size: 5vw">Mercatio: New Trade Request</h1>
