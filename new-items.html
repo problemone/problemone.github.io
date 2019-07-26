@@ -284,7 +284,7 @@
 							try {
 								photoRef = imageFolder.child(childData.title + '/have');
 							} catch (ex) {
-
+								photoRef = imageFolder.child(childData.title);
 							}
 
 							photoRef.getDownloadURL().then(function(url) {
@@ -317,7 +317,7 @@
 								try {
 									photoRefNeed = imageFolder.child(childData.title + '/need');
 								} catch (ex) {
-									
+									photoRefNeed = imageFolder.child(childData.title);
 								}
 								photoRefNeed.getDownloadURL().then(function(needurl) {
 									needText = childData.need;
