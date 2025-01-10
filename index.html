@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Nicholas_Website</title>
+    <title>Unity Web Player | Nicholas_Portfolio_Website</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 960px; height: 600px; background: #000000"></canvas>
     <script src="Build/website_build.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -25,13 +25,14 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/website_build.data",
-        frameworkUrl: "Build/website_build.framework.js",
-        codeUrl: "Build/website_build.wasm",
+        arguments: [],
+        dataUrl: "Build/website_build.data.gz",
+        frameworkUrl: "Build/website_build.framework.js.gz",
+        codeUrl: "Build/website_build.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "Nicholas_Website",
-        productVersion: "0.1",
+        companyName: "Nicholas Verzic",
+        productName: "Nicholas_Portfolio_Website",
+        productVersion: "1.0",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
