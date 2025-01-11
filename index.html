@@ -24,7 +24,7 @@
         document.body.style.textAlign = "left";
       }
 
-      var unityInstance = createUnityInstance(document.querySelector("#unity-canvas"), {
+      var config = {
         arguments: [],
         dataUrl: "Build/NicholasVerzic.data",
         frameworkUrl: "Build/NicholasVerzic.framework.js",
@@ -35,7 +35,14 @@
         productVersion: "1.0",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-      });
+      }
+
+      var myGameInstance = null;
+      script.onload = () => {
+        createUnityInstance(document.querySelector("#unity-canvas"), config).then((unityInstance) => {
+          myGameInstance = unityInstance;
+        })
+      }
     </script>
   </body>
 </html>
