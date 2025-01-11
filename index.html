@@ -40,11 +40,9 @@
       var myGameInstance = null;
 
       function assignUnityInstance(){
-        script.onload = () => {
-          createUnityInstance(document.querySelector("#unity-canvas"), config).then((unityInstance) => {
-            myGameInstance = unityInstance;
-          })
-        }
+        createUnityInstance(document.querySelector("#unity-canvas"), config).then((unityInstance) => {
+          myGameInstance = unityInstance;
+        })
       }
     </script>
   </body>
