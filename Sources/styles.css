@@ -1,4 +1,15 @@
 body {
     margin: 0 !important;
     padding: 0 !important;
+    border: 0;
+    text-align: center;
+    overflow: hidden;
+    background-color:#1A2029;
+}
+
+canvas {
+    width: auto;
+    height: 100vh;
+    max-width: 100vw;
+    background: #000000;
 }
