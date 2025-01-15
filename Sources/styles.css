@@ -16,7 +16,7 @@ canvas {
 
 /* Spinner by xXJollyHAKERXx on UIVerse.io */
 .spinner {
-    background-image: linear-gradient(rgb(57,74,118)) 35%,rgb(157,131,96));
+    background-image: linear-gradient(rgb(57,74,118) 35%,rgb(157,131,96));
     width: 200px;
     height: 200px;
     animation: spinning82341 1.7s linear infinite;
