@@ -17,7 +17,7 @@ function selectProject(projectNum){
 }
 
 function retrieveBucketFile(){
-    const config = require("./config.json");
+    const config = require("Sources/config.json");
 
     try{
         (async function(){
