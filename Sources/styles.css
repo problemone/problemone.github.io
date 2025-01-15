@@ -13,3 +13,29 @@ canvas {
     max-width: 100vw;
     background: #000000;
 }
+
+/* Spinner by xXJollyHAKERXx on UIVerse.io */
+.spinner {
+    background-image: linear-gradient(rgb(57,74,118)) 35%,rgb(157,131,96));
+    width: 200px;
+    height: 200px;
+    animation: spinning82341 1.7s linear infinite;
+    text-align: center;
+    border-radius: 100px;
+    filter: blur(1px);
+    box-shadow: 0px -5px 20px 0px rgb(57,74,118), 0px 5px 20px 0px rgb(157,131,96);
+}
+
+.spinner1 {
+    background-color: #121212;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    filter: blur(10px);
+}
+
+@keyframes spinning82341 {
+    to {
+        transform: rotate(360deg);
+    }
+}
