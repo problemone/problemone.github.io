@@ -34,4 +34,4 @@ function retrieveBucketFile(){
     }
 }
 
-retrieveBucketFile()
+retrieveBucketFile();

@@ -40,13 +40,11 @@
       }
 
       var myGameInstance = null;
-      var projectInfoFile = null;
 
       function assignUnityInstance(){
         createUnityInstance(document.querySelector("#unity-canvas"), config).then((unityInstance) => {
           myGameInstance = unityInstance;
-        })
-        projectInfoFile = retrieveBucketFile();
+        });
       }
     </script>
   </body>
