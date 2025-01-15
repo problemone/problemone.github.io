@@ -5,16 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Nicholas Verzic Portfolio</title>
+  </head>
+  <body onload="assignUnityInstance()">
     <div id="spinner" class="spinner">
       <div class="spinner1"></div>
     </div>
-  </head>
-  <body onload="assignUnityInstance()">
     <canvas id="unity-canvas" width=1920 height=1200 tabindex="-1"></canvas>
-    <script>
-      document.querySelector("#spinner").style.visibility = "visible";
-      document.querySelector("body").style.visibility = "hidden";
-    </script>
     <script src="Build/website_build.loader.js"></script>
     <script src="Sources/retrieveData.js"></script>
     <script>
@@ -30,7 +26,7 @@
         canvas.style.height = window.innerHeight;
         canvas.style.position = "fixed";
 
-        // document.body.style.textAlign = "left";
+        document.body.style.textAlign = "left";
       }
 
       var config = {
@@ -50,11 +46,23 @@
 
       function assignUnityInstance(){
         document.querySelector("#spinner").style.visibility = "hidden";
-        document.querySelector("body").style.visibility = "visible";
+        document.querySelector("canvas").style.visibility = "visible";
         createUnityInstance(document.querySelector("#unity-canvas"), config).then((unityInstance) => {
           myGameInstance = unityInstance;
         });
       }
     </script>
+    <div id="content">
+      <h1>
+        Text
+      </h1>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1>
+        Bottom Text
+      </h1>
+    </div>
   </body>
 </html>

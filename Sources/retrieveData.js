@@ -13,6 +13,8 @@ function retProjectInfo(projectNum){
 }
 
 function selectProject(projectNum){
+    document.querySelector("#spinner").style.visibility = "visible";
+    document.querySelector("#content").scrollIntoView({behavior: "smooth", block: "start", inline: "center"});
     console.log("projectNum: " + projectNum);
 }
 
