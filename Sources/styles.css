@@ -14,6 +14,14 @@ canvas {
     background: #000000;
 }
 
+.headerText{
+    color: #A2A2A2;
+}
+
+.bodyText{
+    color: #FFFFFF;
+}
+
 /* Spinner by xXJollyHAKERXx on UIVerse.io */
 .spinner {
     background-image: linear-gradient(rgb(57,74,118) 35%,rgb(157,131,96));
