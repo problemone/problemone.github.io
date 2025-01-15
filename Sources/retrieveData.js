@@ -5,8 +5,8 @@ function retProjectInfo(projectNum){
     let company = null;
 
     let specificProject = projectData.split('\n')[projectNum - 1];
-    company = specificProject.split('\n')[0];
-    position = specificProject.split('\n')[1];
+    company = specificProject.split(',')[0];
+    position = specificProject.split(',')[1];
     
     console.log("retString: " + position + ";" + company);
     return position + ";" + company;
