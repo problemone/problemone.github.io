@@ -17,11 +17,13 @@ function selectProject(projectNum){
 }
 
 function retrieveBucketFile(){
-    const config = require("Sources/config.json");
+    const config = {
+        "apiEndpoint": "https://sdr9a8oax0.execute-api.us-east-2.amazonaws.com/dev/nicholasverzicwebsiteprojects/websiteProjects.csv"
+    };
 
     try{
         (async function(){
-            projectData = await fetch(config.aws.apiEndpoint)
+            projectData = await fetch(config["apiEndpoint"])
             .then(function(response) {
                 return response.text();
             }).then(function(data) {
