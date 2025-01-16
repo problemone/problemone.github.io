@@ -7,9 +7,9 @@
     <title>Nicholas Verzic Portfolio</title>
   </head>
   <body onload="assignUnityInstance()">
-    <div id="spinner" class="spinner">
+    <!-- <div id="spinner" class="spinner">
       <div class="spinner1"></div>
-    </div>
+    </div> -->
     <canvas id="unity-canvas" width=1920 height=1200 tabindex="-1"></canvas>
     <script src="Build/website_build.loader.js"></script>
     <script src="Sources/retrieveData.js"></script>
@@ -45,7 +45,7 @@
       var myGameInstance = null;
 
       function assignUnityInstance(){
-        document.querySelector("#spinner").style.visibility = "hidden";
+        // document.querySelector("#spinner").style.visibility = "hidden";
         document.querySelector("canvas").style.visibility = "visible";
         createUnityInstance(document.querySelector("#unity-canvas"), config).then((unityInstance) => {
           myGameInstance = unityInstance;

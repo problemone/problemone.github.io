@@ -23,7 +23,7 @@ canvas {
 }
 
 /* Spinner by xXJollyHAKERXx on UIVerse.io */
-.spinner {
+/* .spinner {
     background-image: linear-gradient(rgb(57,74,118) 35%,rgb(157,131,96));
     width: 200px;
     height: 200px;
@@ -51,4 +51,4 @@ canvas {
     to {
         transform: rotate(360deg);
     }
-}
+} */
