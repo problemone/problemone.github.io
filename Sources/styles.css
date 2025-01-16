@@ -4,7 +4,8 @@ body {
     border: 0;
     text-align: center;
     overflow: hidden;
-    background-color:#121212;
+    background-color:#FDE8CA;
+    font-family: Arial, sans-serif;
 }
 
 canvas {
@@ -22,33 +23,56 @@ canvas {
     color: #FFFFFF;
 }
 
-/* Spinner by xXJollyHAKERXx on UIVerse.io */
-/* .spinner {
-    background-image: linear-gradient(rgb(57,74,118) 35%,rgb(157,131,96));
-    width: 200px;
-    height: 200px;
-    animation: spinning82341 1.7s linear infinite;
-    text-align: center;
-    position: absolute;
-    z-index: 15;
-    top: 50%;
-    left: 50%;
-    margin: -100px 0 0 -100px;
-    border-radius: 100px;
-    filter: blur(1px);
-    box-shadow: 0px -5px 20px 0px rgb(57,74,118), 0px 5px 20px 0px rgb(157,131,96);
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-.spinner1 {
-    background-color: #121212;
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    filter: blur(10px);
+::-webkit-scrollbar-track {
+    background: #272727; 
 }
 
-@keyframes spinning82341 {
-    to {
-        transform: rotate(360deg);
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#9d836047, #1433a444); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(#9D8360, #3A4C7C);; 
+}
+
+.Btn {
+    width: 90px;
+    height: 90px;
+    background: #9D8360;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    visibility: hidden;
+}
+
+.arrow path {
+    fill: white;
+}
+
+.Btn:hover .arrow {
+    animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
     }
-} */
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+  

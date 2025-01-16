@@ -1,4 +1,6 @@
 let projectData = null;
+let currProjectNum = 1;
+const bodyElement = document.querySelector("body");
 
 function retProjectInfo(projectNum){
     let position = null;
@@ -13,12 +15,31 @@ function retProjectInfo(projectNum){
 }
 
 function selectProject(projectNum){
-    // document.querySelector("#spinner").style.visibility = "visible";
+    currProjectNum = projectNum;
     document.querySelector("#content").scrollIntoView({behavior: "smooth", block: "start", inline: "center"});
     console.log("projectNum: " + projectNum);
 }
 
-function retrieveBucketFile(){
+function scrollToTop(){
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+}
+
+function initializeWebsite(){
+    // Hide scrollbar if window is at the top
+    window.addEventListener('scroll', () => {
+        if (window.scrollY == 0) {
+            document.querySelector(".Btn").style.visibility = "hidden";
+            bodyElement.style.overflowY = "hidden";
+        } else {
+            document.querySelector(".Btn").style.visibility = "visible";
+            bodyElement.style.overflowY = "visible";
+        }
+    });
+
+    // Retrieve s3 bucket file with project info
     const config = {
         "apiEndpoint": "https://sdr9a8oax0.execute-api.us-east-2.amazonaws.com/dev/nicholasverzicwebsiteprojects/websiteProjects.csv"
     };
@@ -38,4 +59,4 @@ function retrieveBucketFile(){
     }
 }
 
-retrieveBucketFile();
+initializeWebsite();
