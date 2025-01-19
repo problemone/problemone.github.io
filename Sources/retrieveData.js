@@ -1,6 +1,7 @@
 let projectData = null;
 let currProjectNum = 1;
 const bodyElement = document.querySelector("body");
+const gameBackColor = rgb(76,76,76);
 
 function retProjectInfo(projectNum){
     let position = null;
@@ -37,6 +38,11 @@ function initializeWebsite(){
             document.querySelector(".Btn").style.visibility = "visible";
             bodyElement.style.overflowY = "visible";
         }
+
+        let percScroll = window.scrollY/window.innerHeight;
+        let minColor = 76;
+        let colorScale = 170;
+        bodyElement.style.backgroundColor = rgb(Math.min(percScroll * colorScale + minColor, minColor + colorScale), Math.min(percScroll * colorScale + minColor, minColor + colorScale), Math.min(percScroll * colorScale + minColor, minColor + colorScale));
     });
 
     // Retrieve s3 bucket file with project info
