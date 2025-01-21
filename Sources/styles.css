@@ -1,15 +1,41 @@
-body {
+body{
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    margin: 0;
+}
+
+.background {
     margin: 0 !important;
     padding: 0 !important;
     border: 0;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
     text-align: center;
-    overflow: hidden;
     background-color:#55534C;
-    transition: background-color 0.4s;
-    /* -webkit-transition: background-color 0.4s;
-    -o-transition: background-color 0.4s;
-    -moz-transition: background-color 0.4s; */
-    font-family: Arial, sans-serif;
+    transition: background-color;
+    -webkit-transition: background-color;
+    -o-transition: background-color;
+    -moz-transition: background-color;
+}
+
+.backgroundTravelling {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color:#55534C;
+    z-index: -1;
+    position: fixed;
+    transition: background-color;
+    -webkit-transition: background-color;
+    -o-transition: background-color;
+    -moz-transition: background-color;
 }
 
 canvas {

@@ -1,8 +1,10 @@
 let projectData = null;
 let currProjectNum = 1;
 const bodyElement = document.querySelector("body");
+const backgroundElement = document.querySelector(".background");
+const backgroundTravelling = document.querySelector(".backgroundTravelling");
 const backgroundMinColor = [85, 83, 76];
-const colorScale = 170;
+const colorScale = 120;
 let percScroll = 0;
 let targetColor = backgroundMinColor;
 
@@ -29,32 +31,24 @@ function scrollToTop(){
     });
 }
 
-function setBackgroundColor(){
-    targetColor = [percScroll * colorScale + backgroundMinColor[0], percScroll * colorScale + backgroundMinColor[1], percScroll * colorScale + backgroundMinColor[2]]
-    bodyElement.style.backgroundColor = "rgb(" + targetColor[0] + "," + targetColor[1] + "," + targetColor[2] + ")";
-}
-
 function initializeWebsite(){
     // Set window to top
     window.scrollTo(0, 0);
 
     // Hide scrollbar if window is at the top
     window.addEventListener('scroll', () => {
+        percScroll = Math.min(window.scrollY/window.innerHeight, 1);
         if (window.scrollY == 0) {
             document.querySelector(".Btn").style.visibility = "hidden";
             bodyElement.style.overflowY = "hidden";
-            if(percScroll == 1){
-                percScroll = 0;
-                setBackgroundColor()
-            }
         } else {
             document.querySelector(".Btn").style.visibility = "visible";
             bodyElement.style.overflowY = "visible";
-            if(percScroll == 0){
-                percScroll = 1;
-                setBackgroundColor()
-            }
         }
+
+        targetColor = [percScroll * colorScale + backgroundMinColor[0], percScroll * colorScale + backgroundMinColor[1], percScroll * colorScale + backgroundMinColor[2]]
+        backgroundElement.style.backgroundColor = "rgb(" + targetColor[0] + "," + targetColor[1] + "," + targetColor[2] + ")";
+        backgroundTravelling.style.backgroundColor = "rgb(" + targetColor[0] + "," + targetColor[1] + "," + targetColor[2] + ")";
     });
 
     // Retrieve s3 bucket file with project info

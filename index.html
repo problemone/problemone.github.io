@@ -10,47 +10,50 @@
     <!-- <div id="spinner" class="spinner">
       <div class="spinner1"></div>
     </div> -->
-    <canvas id="unity-canvas" width=1920 height=1200 tabindex="-1"></canvas>
-    <script src="Build/website_build.loader.js"></script>
-    <script src="Sources/retrieveData.js"></script>
-    <script>
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        // Mobile device style: fill the whole browser client area with the game canvas:
-        var meta = document.createElement('meta');
-        meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-        document.getElementsByTagName('head')[0].appendChild(meta);
+    <div class="backgroundTravelling"></div>
+    <div class="background">
+      <canvas id="unity-canvas" width=1920 height=1200 tabindex="-1"></canvas>
+      <script src="Build/website_build.loader.js"></script>
+      <script src="Sources/retrieveData.js"></script>
+      <script>
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+          // Mobile device style: fill the whole browser client area with the game canvas:
+          var meta = document.createElement('meta');
+          meta.name = 'viewport';
+          meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+          document.getElementsByTagName('head')[0].appendChild(meta);
 
-        var canvas = document.querySelector("#unity-canvas");
-        canvas.style.width = window.innerWidth;
-        canvas.style.height = window.innerHeight;
-        canvas.style.position = "fixed";
+          var canvas = document.querySelector("#unity-canvas");
+          canvas.style.width = window.innerWidth;
+          canvas.style.height = window.innerHeight;
+          canvas.style.position = "fixed";
 
-        document.body.style.textAlign = "left";
-      }
+          document.body.style.textAlign = "left";
+        }
 
-      var config = {
-        arguments: [],
-        dataUrl: "Build/website_build.data",
-        frameworkUrl: "Build/website_build.framework.js",
-        codeUrl: "Build/website_build.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "Nicholas Verzic",
-        productName: "Nicholas_Portfolio_Website",
-        productVersion: "1.0",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-      }
+        var config = {
+          arguments: [],
+          dataUrl: "Build/website_build.data",
+          frameworkUrl: "Build/website_build.framework.js",
+          codeUrl: "Build/website_build.wasm",
+          streamingAssetsUrl: "StreamingAssets",
+          companyName: "Nicholas Verzic",
+          productName: "Nicholas_Portfolio_Website",
+          productVersion: "1.0",
+          // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+          // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+        }
 
-      var myGameInstance = null;
+        var myGameInstance = null;
 
-      function assignUnityInstance(){
-        document.querySelector("canvas").style.visibility = "visible";
-        createUnityInstance(document.querySelector("#unity-canvas"), config).then((unityInstance) => {
-          myGameInstance = unityInstance;
-        });
-      }
-    </script>
+        function assignUnityInstance(){
+          document.querySelector("canvas").style.visibility = "visible";
+          createUnityInstance(document.querySelector("#unity-canvas"), config).then((unityInstance) => {
+            myGameInstance = unityInstance;
+          });
+        }
+      </script>
+    </div>
 
     <button class="Btn" onclick="scrollToTop()">
       <svg height="3em" class="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
@@ -60,6 +63,61 @@
       <h1 class="headerText">
         Text
       </h1>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1 class="bodyText">
+        Middle Text
+      </h1>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
       <br>
       <br>
       <br>
