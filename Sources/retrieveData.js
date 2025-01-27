@@ -45,6 +45,15 @@ function initializeWebsite(){
             document.querySelector(".Btn").style.visibility = "visible";
             bodyElement.style.overflowY = "visible";
         }
+        
+        let fadeInElements = document.getElementsByClassName('fadeIn');
+        let relScreenPos = 0;
+
+        for(let i = 0; i < fadeInElements.length; i++){
+            relScreenPos = Math.max(0, Math.min((fadeInElements[i].offsetTop - window.scrollY)/(fadeInElements[i].offsetTop - (window.scrollY + window.innerHeight)), 1));
+            console.log("FadeInElementPosition: " + relScreenPos);
+            fadeInElements[i].style.opacity = relScreenPos;
+        }
 
         targetColor = [percScroll * colorScale + backgroundMinColor[0], percScroll * colorScale + backgroundMinColor[1], percScroll * colorScale + backgroundMinColor[2]]
         backgroundElement.style.backgroundColor = "rgb(" + targetColor[0] + "," + targetColor[1] + "," + targetColor[2] + ")";

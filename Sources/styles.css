@@ -4,6 +4,14 @@ body{
     margin: 0;
 }
 
+.fadeIn {
+    opacity: 0;
+    transition: opacity;
+    -webkit-transition: opacity;
+    -o-transition: opacity;
+    -moz-transition: opacity;
+}
+
 .background {
     margin: 0 !important;
     padding: 0 !important;
