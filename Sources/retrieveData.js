@@ -50,17 +50,9 @@ function initializeWebsite(){
         let relScreenPos = 0;
 
         for(let i = 0; i < fadeInElements.length; i++){
-            let elementBoundingRect = fadeInElements[i].getBoundingClientRect().y;
-            console.log("Num " + i + ": " + elementBoundingRect);
-            relScreenPos = 1-Math.max(0, Math.min((elementBoundingRect - window.scrollY)/(window.innerHeight * 0.5), 1));
-            
-            if(i == 1){
-                let highlight = document.getElementById("highlight");
-                highlight.style.left = `${clientRect.x}px`;
-                highlight.style.top = `${clientRect.y}px`;
-                highlight.style.width = `${clientRect.width}px`;
-                highlight.style.height = `${clientRect.height}px`;
-            }
+            let elementBoundingRect = fadeInElements[i].getBoundingClientRect();
+            relScreenPos = 1-Math.max(0, Math.min((document.documentElement.scrollTop + elementBoundingRect.y - window.scrollY - window.innerHeight * 0.5)/(window.innerHeight * 0.5), 1));
+            console.log("Opacity " + i + ": " + relScreenPos);
 
             fadeInElements[i].style.opacity = relScreenPos;
         }

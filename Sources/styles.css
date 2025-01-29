@@ -13,12 +13,6 @@ body{
     -moz-transition: opacity;
 }
 
-#highlight {
-    background: yellow;
-    position: absolute;
-    z-index: 1;
-}
-
 .background {
     margin: 0 !important;
     padding: 0 !important;
@@ -77,11 +71,11 @@ canvas {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(#9d8360ae, #3a4c7cbc); 
+    background: #9d8360ae; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(#9D8360, #3A4C7C);; 
+    background: #9D8360; 
 }
 
 .Btn {
