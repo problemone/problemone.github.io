@@ -15,14 +15,11 @@ function scrollToTop(){
 
 function setBehavior(){
     // Set contents border
-    let canvasElementRect = document.querySelector("canvas").getBoundingClientRect();
     let contentElement = document.querySelector("#content");
     console.log("ContentElement: " + contentElement);
-    contentElement.style.marginLeft = canvasElementRect.x + "px";
-    contentElement.style.marginRight = canvasElementRect.x + "px";
-    console.log("margins: " + canvasElementRect.x + "px");
+    contentElement.style.marginLeft = "10vw";
+    contentElement.style.marginRight = "10vw";
     contentElement.style.marginTop = "10vh";
-    console.log("marginsTop: " + "10vh");
     
     // Hide scrollbar if window is at the top
     window.addEventListener('scroll', () => {
