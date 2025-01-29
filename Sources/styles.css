@@ -55,11 +55,13 @@ canvas {
 }
 
 .headerText{
-    color: #ffffff;
+    color: #9D8360;
+    margin-left: 0px;
 }
 
 .bodyText{
-    color: #FFFFFF;
+    color: #37487C;
+    margin-right: 0px;
 }
 
 ::-webkit-scrollbar {
@@ -96,7 +98,7 @@ canvas {
 }
 
 .arrow path {
-    fill: white;
+    fill: #CDCBC4;
 }
 
 .Btn:hover .arrow {
