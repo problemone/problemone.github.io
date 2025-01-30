@@ -119,9 +119,11 @@ canvas {
   
 
 .media{
+    z-index: 1;
     height: 600px;
     left: 0px;
     right: 0px;
+    justify-content: center;
 }
 
 .mediaControls{
@@ -131,12 +133,60 @@ canvas {
     height: 600px;
 }
 
+.Btn:hover .arrow {
+    animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes zoomAnim {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.mediaButton{
+    background-color: #CDCBC4;
+    border: none;
+}
+
+.mediaButton:hover .right{
+    animation: zoomAnim .25s;
+}
+
+.mediaButton:hover .left{
+    animation: zoomAnim .25s;
+}
+
+.right path{
+    fill: #ffffff;
+}
+
+.left path{
+    fill: #ffffff;
+}
+
+.images{
+    height: 600px;
+    object-fit: contain;
+}
+
 #image1{
     background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 #image2{
     background-image: url("https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 #image3{
     background-image: url("https://www.bkacontent.com/wp-content/uploads/2016/06/Depositphotos_31146757_l-2015.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
