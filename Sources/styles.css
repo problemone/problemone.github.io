@@ -131,12 +131,12 @@ canvas {
     height: 600px;
 }
 
-.image1{
+#image1{
     background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg");
 }
-.image2{
+#image2{
     background-image: url("https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg");
 }
-.image3{
+#image3{
     background-image: url("https://www.bkacontent.com/wp-content/uploads/2016/06/Depositphotos_31146757_l-2015.jpg");
 }
