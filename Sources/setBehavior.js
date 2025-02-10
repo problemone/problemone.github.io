@@ -5,12 +5,27 @@ const backgroundMinColor = [85, 83, 76];
 const colorScale = 120;
 let percScroll = 0;
 let targetColor = backgroundMinColor;
+let imageRot = 0;
 
 function scrollToTop(){
     window.scrollTo({
         top: 0,
         behavior: 'smooth',
     });
+}
+
+function rotLeft(){
+    imageRot = imageRot-120;
+    updateGallery();
+}
+function rotRight(){
+    imageRot = imageRot+120;
+    updateGallery();
+}
+
+function updateGallery() {
+    let imagecontainer = document.querySelector(".imageContainer");
+    imagecontainer.style.transform = `perspective(1000px) rotateY(${imageRot}deg)`;
 }
 
 function setBehavior(){
@@ -20,6 +35,14 @@ function setBehavior(){
     contentElement.style.marginLeft = "10vw";
     contentElement.style.marginRight = "10vw";
     contentElement.style.marginTop = "10vh";
+
+    // Updating Gallery
+    try{
+        updateGallery();
+    } catch(error){
+        console.log("No media to display.");
+    }
+
     
     // Hide scrollbar if window is at the top
     window.addEventListener('scroll', () => {

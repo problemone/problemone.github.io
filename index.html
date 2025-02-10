@@ -84,14 +84,22 @@
       <br>
       <br>
       <div class="media fadeIn">
-        <div id="image1" class="images"></div>
-        <div id="image2" class="images"></div>
-        <div id="image3" class="images"></div>
+        <div class="imageContainer">
+          <span style="--index: 1">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" />
+          </span>
+          <span style="--index: 2">
+            <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" />
+          </span>
+          <span style="--index: 3">
+            <img src="https://www.bkacontent.com/wp-content/uploads/2016/06/Depositphotos_31146757_l-2015.jpg" />
+          </span>
+        </div>
         <div class="mediaControls">
-          <button class="mediaButton">
+          <button class="mediaButton" onclick="rotLeft()">
             <svg height="40px" class="right" viewBox="-100 -100 200 200"><path d = "M 20 -0 L -40 60 C -60 100 -20 100 0 80 L 60 20 Q 80 -0 60 -20 L -0 -80 C -20 -100 -60 -100 -40 -60 L 20 -0"></path></svg>
           </button>
-          <button class="mediaButton">
+          <button class="mediaButton" onclick="rotRight()">
             <svg height="40px" class="left" viewBox="-100 -100 200 200"><path d = "M -20 0 L 40 -60 C 60 -100 20 -100 -0 -80 L -60 -20 Q -80 0 -60 20 L 0 80 C 20 100 60 100 40 60 L -20 0"></path></svg>
           </button>
         </div>
