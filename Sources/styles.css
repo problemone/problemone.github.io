@@ -29,7 +29,7 @@ body{
     -moz-transition: background-color;
 }
 
-.backgroundTravelling {
+/* .backgroundTravelling {
     margin: 0 !important;
     padding: 0 !important;
     border: 0;
@@ -45,6 +45,10 @@ body{
     -webkit-transition: background-color;
     -o-transition: background-color;
     -moz-transition: background-color;
+} */
+
+.contentSection {
+    background-color: rgb(calc(205-(100*mod(var(--section), 2))), calc(203-(50*mod(var(--section), 2))), calc(196-(50*mod(var(--section), 2))));
 }
 
 canvas {
@@ -56,7 +60,9 @@ canvas {
 
 .headerText{
     color: #9D8360;
+    font-size: 5vw;
     margin-left: 0px;
+    text-align: center;
 }
 
 .bodyText{
@@ -95,6 +101,7 @@ canvas {
     bottom: 50px;
     right: 50px;
     visibility: hidden;
+    z-index: 2;
 }
 
 .arrow path {
@@ -188,7 +195,6 @@ canvas {
 .imageContainer span {
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     transform: rotateY(calc(var(--index) * 120deg)) translateZ(400px);
@@ -198,4 +204,9 @@ canvas {
 .imageContainer span img {
     width: auto;
     height: 100%;
+}
+
+.imageContainer span iframe {
+    height: 100%;
+    aspect-ratio: 16/9;
 }
