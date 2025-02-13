@@ -5,7 +5,21 @@ body{
     min-height: 100vh;
 }
 
+#content{
+    
+}
+
+#content div:nth-child(odd){
+    background-color: rgb(205, 203, 196);
+}
+
+#content div:nth-child(even){
+    background-color: rgb(165, 163, 156);
+}
+
 .fadeIn {
+    margin-left: 10vw;
+    margin-right: 10vw;
     opacity: 0;
     transition: opacity;
     -webkit-transition: opacity;
@@ -46,10 +60,6 @@ body{
     -o-transition: background-color;
     -moz-transition: background-color;
 } */
-
-.contentSection {
-    background-color: rgb(calc(205-(100*mod(var(--section), 2))), calc(203-(50*mod(var(--section), 2))), calc(196-(50*mod(var(--section), 2))));
-}
 
 canvas {
     width: auto;

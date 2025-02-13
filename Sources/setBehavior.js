@@ -29,13 +29,6 @@ function updateGallery() {
 }
 
 function setBehavior(){
-    // Set contents border
-    let contentElement = document.querySelector("#content");
-    console.log("ContentElement: " + contentElement);
-    contentElement.style.marginLeft = "10vw";
-    contentElement.style.marginRight = "10vw";
-    contentElement.style.marginTop = "10vh";
-
     // Updating Gallery
     try{
         updateGallery();
@@ -65,10 +58,6 @@ function setBehavior(){
 
             fadeInElements[i].style.opacity = relScreenPos;
         }
-
-        // targetColor = [percScroll * colorScale + backgroundMinColor[0], percScroll * colorScale + backgroundMinColor[1], percScroll * colorScale + backgroundMinColor[2]]
-        // backgroundElement.style.backgroundColor = "rgb(" + targetColor[0] + "," + targetColor[1] + "," + targetColor[2] + ")";
-        // backgroundTravelling.style.backgroundColor = "rgb(" + targetColor[0] + "," + targetColor[1] + "," + targetColor[2] + ")";
     });
 }
 
