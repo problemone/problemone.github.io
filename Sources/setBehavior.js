@@ -25,7 +25,7 @@ function rotRight(){
 
 function updateGallery() {
     let imagecontainer = document.querySelector(".imageContainer");
-    imagecontainer.style.transform = `perspective(1000px) rotateY(${imageRot}deg)`;
+    imagecontainer.style.transform = `perspective(2000px) rotateY(${imageRot}deg)`;
 }
 
 function setBehavior(){
