@@ -14,29 +14,7 @@ function scrollToTop(){
     });
 }
 
-function rotLeft(){
-    imageRot = imageRot-120;
-    updateGallery();
-}
-function rotRight(){
-    imageRot = imageRot+120;
-    updateGallery();
-}
-
-function updateGallery() {
-    let imagecontainer = document.querySelector(".imageContainer");
-    imagecontainer.style.transform = `perspective(2000px) rotateY(${imageRot}deg)`;
-}
-
-function setBehavior(){
-    // Updating Gallery
-    try{
-        updateGallery();
-    } catch(error){
-        console.log("No media to display.");
-    }
-
-    
+function setBehavior(){   
     // Hide scrollbar if window is at the top
     window.addEventListener('scroll', () => {
         percScroll = Math.min(window.scrollY/window.innerHeight, 1);
