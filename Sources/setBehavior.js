@@ -16,14 +16,6 @@ function scrollToTop(){
 function setBehavior(){   
     // Hide scrollbar if window is at the top
     window.addEventListener('scroll', () => {
-        // if (window.scrollY == 0) {
-        //     document.querySelector(".Btn").style.visibility = "hidden";
-        //     bodyElement.style.overflowY = "hidden";
-        // } else {
-        //     document.querySelector(".Btn").style.visibility = "visible";
-        //     bodyElement.style.overflowY = "visible";
-        // }
-        
         let fadeInElements = document.getElementsByClassName('fadeIn');
         let relScreenPos = 0;
 
