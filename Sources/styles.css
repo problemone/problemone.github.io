@@ -63,7 +63,7 @@ canvas {
 }
 
 .headerText{
-    color: #9D8360;
+    color: #384977;
     font-size: 3vw;
     margin: 0px;
     margin-bottom: 1%;
@@ -71,9 +71,36 @@ canvas {
     font-weight: bold;
 }
 
+.resumeBox {
+    width: 110%;
+    transform: translateX(-5%);
+    height: 78vw;
+    background-color: #a59a8b;
+    border: 10px solid #9D8360;
+    border-radius: 3vh;
+    position: relative;
+}
+
+.resumeBox .headerText{
+    position: absolute;
+    left: 50%;
+    top: 2vw;
+    transform: translateX(-50%);
+}
+
+.resumeBox iframe{
+    position: absolute;
+    left: 50%;
+    top: 7vw;
+    transform: translateX(-50%);
+    width: 90%;
+    height: auto;
+    aspect-ratio: 1;
+}
+
 .bodyText{
+    color: #9D8360;
     margin: 0;
-    color: #384977;
     font-size: 2vw;
     font-weight: bold;
 }
