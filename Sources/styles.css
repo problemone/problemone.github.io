@@ -3,6 +3,7 @@ body{
     overflow: hidden;
     margin: 0;
     min-height: 100vh;
+    background-color: rgb(192, 188, 179);
 }
 
 br {
@@ -10,30 +11,30 @@ br {
 }
 
 #content{
-    /* display: flex;
-    flex-direction: column; */
     display: block;
     min-height: 100vh;
-    /* will-change: transform; */
+    margin-bottom: 30vh;
 }
 
 #content > div:nth-child(odd){
-    background-color: rgb(205, 203, 196);
+    background-color: rgb(192, 188, 179);
     /* flex-grow: 1;*/
     height: auto;
     overflow: auto;
 }
 
 #content > div:nth-child(even){
-    background-color: rgb(192, 188, 179);
+    background-color: rgb(205, 203, 196);
     /* flex-grow: 1; */
     height: auto;
     overflow: auto;
 }
 
 .fadeIn {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
     opacity: 0;
     transition: opacity;
     -webkit-transition: opacity;
@@ -67,13 +68,14 @@ canvas {
 .headerText{
     color: #9D8360;
     font-size: 3vw;
-    margin-left: 0px;
-    text-align: center;
-    text-decoration: underline;
+    margin: 0px;
+    margin-bottom: 1%;
+    text-align: left;
+    /* text-decoration: underline; */
 }
 
 .bodyText{
-    margin-right: 0px;
+    margin: 0;
     color: #384977;
     font-size: 2vw;
 }
@@ -146,7 +148,6 @@ canvas {
 }
 
 .imageContainer {
-    position: relative;
     width: 100%;
     height: auto;
     margin-bottom: 5%;
@@ -155,12 +156,13 @@ canvas {
 .imageContainer div {
     position: relative;
     height: auto;
+    display: flow-root;
 }
 
 .imageContainer div .imageText{
     position: absolute;
     top: 50%;
-    left: 65%;
+    left: 0;
     transform: translateY(-150%);
 }
 
@@ -168,6 +170,7 @@ canvas {
     width: 60%;
     height: auto;
     margin: 1%;
+    float: right;
 }
 
 .imageContainer div iframe {
@@ -175,4 +178,13 @@ canvas {
     height: auto;
     aspect-ratio: 16/9;
     margin: 1%;
+    float: right;
+}
+
+li{
+    margin: 1%;
+}
+
+a{
+    color: #587fe9;
 }
