@@ -3,7 +3,6 @@ const backgroundElement = document.querySelector(".background");
 const backgroundTravelling = document.querySelector(".backgroundTravelling");
 const backgroundMinColor = [85, 83, 76];
 const colorScale = 120;
-let percScroll = 0;
 let targetColor = backgroundMinColor;
 let imageRot = 0;
 
@@ -17,14 +16,13 @@ function scrollToTop(){
 function setBehavior(){   
     // Hide scrollbar if window is at the top
     window.addEventListener('scroll', () => {
-        percScroll = Math.min(window.scrollY/window.innerHeight, 1);
-        if (window.scrollY == 0) {
-            document.querySelector(".Btn").style.visibility = "hidden";
-            bodyElement.style.overflowY = "hidden";
-        } else {
-            document.querySelector(".Btn").style.visibility = "visible";
-            bodyElement.style.overflowY = "visible";
-        }
+        // if (window.scrollY == 0) {
+        //     document.querySelector(".Btn").style.visibility = "hidden";
+        //     bodyElement.style.overflowY = "hidden";
+        // } else {
+        //     document.querySelector(".Btn").style.visibility = "visible";
+        //     bodyElement.style.overflowY = "visible";
+        // }
         
         let fadeInElements = document.getElementsByClassName('fadeIn');
         let relScreenPos = 0;
