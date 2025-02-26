@@ -25,7 +25,7 @@ br {
 }
 
 #content > div:nth-child(even){
-    background-color: rgb(165, 163, 156);
+    background-color: rgb(192, 188, 179);
     /* flex-grow: 1; */
     height: auto;
     overflow: auto;
@@ -66,15 +66,16 @@ canvas {
 
 .headerText{
     color: #9D8360;
-    font-size: 5vw;
+    font-size: 3vw;
     margin-left: 0px;
     text-align: center;
     text-decoration: underline;
 }
 
 .bodyText{
-    color: #37487C;
     margin-right: 0px;
+    color: #384977;
+    font-size: 2vw;
 }
 
 ::-webkit-scrollbar {
@@ -157,12 +158,10 @@ canvas {
 }
 
 .imageContainer div .imageText{
-    color: rgb(221, 217, 202);
-    font-size: 2vw;
     position: absolute;
     top: 50%;
     left: 65%;
-    transform: translateY(-100%);
+    transform: translateY(-150%);
 }
 
 .imageContainer div img {
