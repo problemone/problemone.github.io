@@ -5,6 +5,7 @@ const backgroundMinColor = [85, 83, 76];
 const colorScale = 120;
 let targetColor = backgroundMinColor;
 let imageRot = 0;
+const contentElement = document.getElementById('content');
 
 function scrollToTop(){
     window.scrollTo({
