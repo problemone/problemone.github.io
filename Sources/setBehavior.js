@@ -1,6 +1,7 @@
 const bodyElement = document.querySelector("body");
 const backgroundElement = document.querySelector(".background");
 const backgroundTravelling = document.querySelector(".backgroundTravelling");
+const buttonElement = document.querySelector(".Btn");
 const backgroundMinColor = [85, 83, 76];
 const colorScale = 120;
 let targetColor = backgroundMinColor;
@@ -26,6 +27,14 @@ function setBehavior(){
             relScreenPos = 1-Math.max(0, Math.min((document.documentElement.scrollTop + elementBoundingRect.y - window.scrollY - window.innerHeight * (1-scale))/(window.innerHeight * scale), 1));
 
             fadeInElements[i].style.opacity = relScreenPos;
+        }
+
+        console.log(buttonElement);
+        if(window.scrollY > 0){
+            buttonElement[0].style.visibility = "visible";
+        }
+        else {
+            buttonElement[0].style.visibility = "hidden";
         }
     });
 }

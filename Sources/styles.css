@@ -122,8 +122,8 @@ canvas {
 }
 
 .Btn {
-    width: 90px;
-    height: 90px;
+    width: 6vw;
+    height: 6vw;
     background: #9D8360;
     display: flex;
     align-items: center;
@@ -133,8 +133,8 @@ canvas {
     position: relative;
     border: none;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 4vw;
+    right: 4vw;
     visibility: hidden;
     z-index: 2;
 }
