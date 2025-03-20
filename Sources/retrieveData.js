@@ -7,10 +7,10 @@ function retProjectInfo(projectNum){
     let company = null;
 
     let specificProject = projectData[projectNum - 1];
-    company = specificProject[1];
-    position = specificProject[0];
+    company = specificProject[0];
+    position = specificProject[1];
     
-    return position + ";" + company;
+    return company + ";" + position;
 }
 
 function selectProject(projectNum){
