@@ -135,7 +135,7 @@ canvas {
     position: fixed;
     bottom: 4vw;
     right: 4vw;
-    visibility: hidden;
+    visibility: visible;
     z-index: 2;
 }
 
