@@ -21,13 +21,10 @@ function initializeWebsite(){
     // Retrieve file with project info
 
     try{
-        console.log("Gathering CSV");
         fetch('Sources/projectPages/websiteProjects.csv')
             .then(response => response.text())
             .then(text => {
                 projectData = text.split("\n").map(row => row.split(","));
-                console.log("Logging Data");
-                console.log(projectData);
             })
     } catch(e){
         console.log("Retrieval Error: " + e);
