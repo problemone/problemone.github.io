@@ -79,6 +79,7 @@ canvas {
     border: 10px solid #9D8360;
     border-radius: 3vh;
     position: relative;
+    margin-top: 3vw;
 }
 
 .resumeBox .headerText{

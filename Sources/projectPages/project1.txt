@@ -1,0 +1,13 @@
+<div>
+<div class="fadeIn">
+    <p class="headerText">Hello -- I am Nicholas Verzic!</p>
+    <p class="bodyText">I am an undergraduate at the University of Texas at Austin with majors in mathematics and mechanical engineering and a minor in economics.</p>
+
+    <div class="resumeBox">
+    <h1 class="headerText">
+        Check out my résumé!
+    </h1>
+    <iframe src="./Sources/resume/Nicholas Verzic - Resume.pdf"></iframe>
+    </div>
+</div>
+</div>

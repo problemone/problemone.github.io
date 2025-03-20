@@ -1,5 +1,6 @@
 let projectData = null;
 let currProjectNum = 1;
+let contentElement = null;
 
 function retProjectInfo(projectNum){
     let position = null;
@@ -13,7 +14,20 @@ function retProjectInfo(projectNum){
 }
 
 function selectProject(projectNum){
+    contentElement = document.getElementById('content');
     currProjectNum = projectNum;
+    try{
+        fetch("Sources/projectPages/project"+String(currProjectNum)+".txt")
+            .then(response => response.text())
+            .then(text => {
+                console.log("setting innerHTML");
+                console.log(text);
+                contentElement.innerHTML = text;
+            })
+    } catch(e){
+        console.log("Project Information Retrieval Error: " + e);
+    }
+
     document.querySelector("#content").scrollIntoView({behavior: "smooth", block: "start", inline: "center"});
 }
 
@@ -27,7 +41,7 @@ function initializeWebsite(){
                 projectData = text.split("\n").map(row => row.split(","));
             })
     } catch(e){
-        console.log("Retrieval Error: " + e);
+        console.log("Project List Retrieval Error: " + e);
     }
 
     // Set window to top
