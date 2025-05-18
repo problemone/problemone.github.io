@@ -15,7 +15,7 @@
     Details
     </h1>
     <ul class="bodyText">
-    <li>Led team developing robust pipeline to segment elevator control panel buttons and labels at pixel-level</li>
+    <li>Led team developing robust semantic segmentation pipeline of elevator control panel features for autonomous robots in novel environments</li>
     <ul class="bodyText">
     <li>Manually segmented and annotated elevator buttons and labels, creating “The Living with Robots Elevator Button Dataset”</li>
     <li>Programmed augmentation algorithm and dataloader for image and segmentation data</li>
@@ -23,7 +23,7 @@
     <li>Introduced “recovery network” using class map generated from first pass output to identify potentially missed features</li>
     <li>Trained and evaluated all models on custom dataset</li>
     <li>Authored research paper published at 2024 IEEE International Conference on Intelligent Robots and Systems (IROS) titled “Recovering Missed Detections in an Elevator Button Segmentation Task”</li>
-    <li>Gave Oral Presentation at IROS 2024</li>
+    <li>Delivered Oral Presentation at IROS 2024, Abu Dhabi</li>
     </ul>
     
     <li>Assisted PhD research on low-resolution video gaze tracking</li>

@@ -39,7 +39,7 @@
     <div class="imageContainer">
     <div>
         <img src="./Sources/media/library_teaching.png" />
-        <p class="imageText bodyText">Saratoga County Library JavaScript Workshop</p>
+        <p class="imageText bodyText">Santa Clara County Library JavaScript Workshop</p>
     </div>
     <div>
         <img src="./Sources/media/microsoft_setup.png" />

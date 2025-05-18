@@ -23,3 +23,15 @@
     <p class="bodyText"><span class="darkBody">Tools Used:</span> MATLAB</p>
 </div>
 </div>
+
+<div>
+<div class="fadeIn">
+    <h1 class="headerText">Media</h1>
+    <div class="imageContainer">
+    <div>
+        <img src="./Sources/media/arl_front.jpg" />
+        <p class="imageText bodyText">ARL Front Entrance</p>
+    </div>
+    </div>
+</div>
+</div>
