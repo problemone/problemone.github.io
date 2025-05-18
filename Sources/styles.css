@@ -39,6 +39,11 @@ br {
     -moz-transition: opacity;
 }
 
+.rights{
+    margin-left:16vw;
+    margin-top: 1vh;
+}
+
 .background {
     margin: 0 !important;
     padding: 0 !important;
@@ -103,7 +108,7 @@ canvas {
     color: #9D8360;
     margin: 0;
     font-size: 2vw;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .darkBody{
@@ -138,10 +143,22 @@ canvas {
     position: relative;
     border: none;
     position: fixed;
-    bottom: 4vw;
-    right: 4vw;
     visibility: visible;
     z-index: 2;
+}
+
+.resumeBtn{
+    bottom: 12vw;
+    right: 4vw;
+}
+
+.resumeBtn img{
+    width: 3vw;
+}
+
+.arrowBtn{
+    bottom: 4vw;
+    right: 4vw;
 }
 
 .arrow path {

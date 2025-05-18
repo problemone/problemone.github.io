@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Nicholas Verzic Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./Sources/media/favicon.ico">
   </head>
   <body onload="assignUnityInstance()">
     <div class="backgroundTravelling"></div>
@@ -55,23 +56,15 @@
     <div id="content">
       <div>
         <div class="fadeIn">
-            <p class="headerText">Welcome to Nicholas Verzic’s Portfolio.</p>
             <p class="bodyText" style="text-indent:4vw;">
                 Nicholas Verzic is a researcher, engineer, and software developer with B.S. degrees in Mathematics and Mechanical Engineering and a minor in Economics from the University of Texas at Austin. His work spans artificial intelligence, robotics, and computational modeling, integrating theoretical mathematical principles with real-world applications. With both academic and professional research experience at Meta, Hewlett Packard Enterprise, and NASA Ames Research Center, he has contributed to impactful projects in a variety of contexts. He also authored, co-authored, and orally presented publications in IEEE conferences on computer vision and sensor networks. This portfolio highlights his work in applied machine learning, automated robotics, and engineering design, reflecting a diligent and deliberate approach to problem-solving.
             </p>
-
-            <div class="resumeBox">
-              <h1 class="headerText">
-                  Nicholas’ Résumé
-              </h1>
-              <iframe src="./Sources/resume/Nicholas Verzic - Resume.pdf"></iframe>
-            </div>
         </div>
       </div>
       
       <div>
         <div class="fadeIn">
-            <p class="headerText">About This Portfolio</p>
+            <p class="headerText">Creating This Portfolio</p>
             <p class="bodyText" style="text-indent:4vw;">
               Given Nicholas’ experience in Unity game design, it made sense to build this portfolio as an interactive experience. The running theme of robotics and applied mathematics influenced the direction, as he designed all models and the kinematic system driving the robot manipulator. See the early stages of the development process below!
               <br>
@@ -90,10 +83,18 @@
         </div>
       </div>
     </div>
+    
+    <button class="Btn resumeBtn" onclick="window.open('./Sources/resume/Anon - Nicholas Verzic - Resume.pdf', '_blank');">
+      <img src="./Sources/media/resume_icon.png">
+    </button>
 
-    <button class="Btn" onclick="scrollToTop()">
+    <button class="Btn arrowBtn" onclick="scrollToTop()">
       <svg height="40px" class="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
     </button>
     <script src="Sources/setBehavior.js"></script>
+
+    <p class="rights">
+      © 2025 Nicholas Verzic. All rights reserved.
+    </p>
   </body>
 </html>
