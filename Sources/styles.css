@@ -106,6 +106,10 @@ canvas {
     font-weight: bold;
 }
 
+.darkBody{
+    color: #384977;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -189,6 +193,7 @@ canvas {
     position: absolute;
     top: 50%;
     left: 0;
+    right: 65%;
     transform: translateY(-50%);
 }
 

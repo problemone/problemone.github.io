@@ -1,56 +1,38 @@
 <div>
 <div class="fadeIn">
     <h1 class="headerText">
-    Position Title
+    Passion Projects
     </h1>
-    <p class="bodyText">Jan 2025 - Dec 2025</p>
-    <p class="bodyText">Company</p>
-    <p class="bodyText">Location</p>
+    <p class="bodyText">Reserved for cool personal projects.</p>
 </div>
 </div>
 
 <div>
 <div class="fadeIn">
     <h1 class="headerText">
-    Details
+    Longhorn Lights
     </h1>
     <ul class="bodyText">
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
+    <li>Designed and built rehabilitative reaction time game for children’s hospital</li>
+    <li>Works for both single- and two-player</li>
     </ul>
-</div>
-</div>
-
-<div>
-<div class="fadeIn">
-    <h1 class="headerText">
-    Published Work
-    </h1>
-    <p class="bodyText"><a href="https://github.com/" target="_blank">Title</a></p>
-    <p class="bodyText">Lead Author/Co-author/Contributor</p>
     <br>
-    <br>
-    <p class="bodyText"><a href="https://github.com/" target="_blank">Title</a></p>
-    <p class="bodyText">Lead Author/Co-author/Contributor</p>
-</div>
-</div>
+    <p class="bodyText"><span class="darkBody">Platforms Used:</span> SolidWorks, Arduino, Raspberry Pi</p>
+    <p class="bodyText"><span class="darkBody">Tools Used:</span> Python, RPi GPIO, C++</p>
 
-<div>
-<div class="fadeIn">
-    <h1 class="headerText">Media</h1>
+    <br>
     <div class="imageContainer">
     <div>
-        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" />
-        <p class="imageText bodyText">Image Description 1</p>
+        <img src="./Sources/media/render_box.jpg" />
+        <p class="imageText bodyText">Box CAD Assembly</p>
     </div>
     <div>
-        <iframe src="https://www.youtube.com/embed/OE8fGXYjvKw"></iframe>
-        <p class="imageText bodyText">Image Description 2</p>
+        <img src="./Sources/media/assembled_box.png" />
+        <p class="imageText bodyText">Final Manufactured Box</p>
     </div>
     <div>
-        <img src="https://www.bkacontent.com/wp-content/uploads/2016/06/Depositphotos_31146757_l-2015.jpg" />
-        <p class="imageText bodyText">Image Description 3</p>
+        <iframe src="https://www.youtube.com/embed/k7E3xx9JYX4?si=-MUNihlH0lh3m4-R"></iframe>
+        <p class="imageText bodyText">Completed Game Walkthrough</p>
     </div>
     </div>
 </div>
@@ -59,10 +41,73 @@
 <div>
 <div class="fadeIn">
     <h1 class="headerText">
-    Related Links
+    Dairy-vator
     </h1>
     <ul class="bodyText">
-    <li>GitHub Repo: <a href="https://github.com/" target="_blank">Title</a></li>
+    <li>Led Mechanical Engineering Design course group project</li>
+    <li>Addresses two primary problems:</li>
+    <ul class="bodyText">
+    <li>Milk cartons stuck at back of dairy fridge</li>
+    <li>Stocking demands too much attention from employees</li>
     </ul>
+    <li>Automated stocking system detects removal of carton and reacts by restocking product</li>
+    <li>Rollers prevent milk sticking on slope</li>
+    <li>Dynamic systems simulated for restocking trigger sensor calibration</li>
+    </ul>
+    <br>
+    <p class="bodyText"><span class="darkBody">Platforms Used:</span> SolidWorks, Arduino</p>
+    <p class="bodyText"><span class="darkBody">Tools Used:</span> Python, Matplotlib, NumPy, C++</p>
+
+    <br>
+    <div class="imageContainer">
+    <div>
+        <iframe src="https://www.youtube.com/embed/tDFk0oBoldE?si=H9zzr9pEbfdAkjo5"></iframe>
+        <p class="imageText bodyText">In-Class Product Demonstration</p>
+    </div>
+    </div>
+</div>
+</div>
+
+<div>
+<div class="fadeIn">
+    <h1 class="headerText">
+    IDBizz App
+    </h1>
+    <ul class="bodyText">
+    <li>Developed iOS application to highlight small business owners’ identities</li>
+    </ul>
+    <br>
+    <p class="bodyText"><span class="darkBody">Platforms Used:</span> Mac, iOS, Xcode, Firebase</p>
+    <p class="bodyText"><span class="darkBody">Tools Used:</span> Swift</p>
+
+    <br>
+    <div class="imageContainer">
+    <div>
+        <img src="./Sources/media/app_page.PNG" />
+        <p class="imageText bodyText">IDBizz iOS App Store Page</p>
+    </div>
+    </div>
+</div>
+</div>
+
+<div>
+<div class="fadeIn">
+    <h1 class="headerText">
+    ShopMarias.com Software Engineer
+    </h1>
+    <ul class="bodyText">
+    <li>Programmed applications/tools for family’s small home design business</li>
+    </ul>
+    <br>
+    <p class="bodyText"><span class="darkBody">Platforms Used:</span> Unity, Android</p>
+    <p class="bodyText"><span class="darkBody">Tools Used:</span> C#, Java, HTML, CSS, JavaScript</p>
+
+    <br>
+    <div class="imageContainer">
+    <div>
+        <iframe src="https://www.youtube.com/embed/IDa74r7Xdvs?si=yesQeuLbcArN78LI"></iframe>
+        <p class="imageText bodyText">Customer-Facing Tablecloth Simulator</p>
+    </div>
+    </div>
 </div>
 </div>

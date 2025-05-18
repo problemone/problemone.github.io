@@ -1,11 +1,11 @@
 <div>
 <div class="fadeIn">
     <h1 class="headerText">
-    Position Title
+    Intelligent Robotics Group University Intern
     </h1>
-    <p class="bodyText">Jan 2025 - Dec 2025</p>
-    <p class="bodyText">Company</p>
-    <p class="bodyText">Location</p>
+    <p class="bodyText">Dec. 2018 - Dec. 2020</p>
+    <p class="bodyText">NASA Ames Research Center</p>
+    <p class="bodyText">Mountain View, CA</p>
 </div>
 </div>
 
@@ -15,10 +15,17 @@
     Details
     </h1>
     <ul class="bodyText">
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
+    <li>Researched radio frequency ranging techniques for distributed sensor network to be deployed on celestial bodies</li>
+    <li>Developed custom multilateration algorithms for localization of ad hoc sensor nodes launched from lander</li>
+    <li>Implemented various optimization techniques to minimize uncertainty in predicted location, improving precision by 50%</li>
+    <li>Collaborated with team on collapsible fin design</li>
+    <li>Designed and conducted on-site experiments in simulated lunar surface environment</li>
+    <li>Co-authored research paper published at 2020 IEEE Aerospace Conference titled “PHALANX: Expendable Projectile Sensor Networks for Planetary Exploration”</li>
+    <li>Presented work at 2 oral presentations and 2 poster symposia</li>
     </ul>
+    <br>
+    <p class="bodyText"><span class="darkBody">Platforms Used:</span> Arduino</p>
+    <p class="bodyText"><span class="darkBody">Tools Used:</span> MATLAB, Python, JavaScript, HTML, SolidWorks</p>
 </div>
 </div>
 
@@ -27,12 +34,8 @@
     <h1 class="headerText">
     Published Work
     </h1>
-    <p class="bodyText"><a href="https://github.com/" target="_blank">Title</a></p>
-    <p class="bodyText">Lead Author/Co-author/Contributor</p>
-    <br>
-    <br>
-    <p class="bodyText"><a href="https://github.com/" target="_blank">Title</a></p>
-    <p class="bodyText">Lead Author/Co-author/Contributor</p>
+    <p class="bodyText"><a href="https://ntrs.nasa.gov/citations/20200002137" target="_blank">PHALANX: Expendable Projectile Sensor Networks for Planetary Exploration</a></p>
+    <p class="bodyText">Co-author</p>
 </div>
 </div>
 
@@ -41,28 +44,25 @@
     <h1 class="headerText">Media</h1>
     <div class="imageContainer">
     <div>
-        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" />
-        <p class="imageText bodyText">Image Description 1</p>
+        <iframe src="https://www.youtube.com/embed/D2xMxCpQ78I?si=myPl7usBORHIXvpB"></iframe>
+        <p class="imageText bodyText">NASA Project PHALANX Oral Presentation</p>
     </div>
     <div>
-        <iframe src="https://www.youtube.com/embed/OE8fGXYjvKw"></iframe>
-        <p class="imageText bodyText">Image Description 2</p>
+        <img src="./Sources/media/nasa_poster.jpg" />
+        <p class="imageText bodyText">NASA Project PHALANX Poster Symposium</p>
     </div>
     <div>
-        <img src="https://www.bkacontent.com/wp-content/uploads/2016/06/Depositphotos_31146757_l-2015.jpg" />
-        <p class="imageText bodyText">Image Description 3</p>
+        <img src="./Sources/media/sensor_node_v1.png" />
+        <p class="imageText bodyText">Distributed Sensor Node Prototype 1</p>
+    </div>
+    <div>
+        <img src="./Sources/media/sensor_node_v2.png" />
+        <p class="imageText bodyText">Distributed Sensor Node Prototype 2</p>
+    </div>
+    <div>
+        <img src="./Sources/media/simulated_lunar_surface.png" />
+        <p class="imageText bodyText">Simulated Lunar Surface for Experimentation</p>
     </div>
     </div>
-</div>
-</div>
-
-<div>
-<div class="fadeIn">
-    <h1 class="headerText">
-    Related Links
-    </h1>
-    <ul class="bodyText">
-    <li>GitHub Repo: <a href="https://github.com/" target="_blank">Title</a></li>
-    </ul>
 </div>
 </div>

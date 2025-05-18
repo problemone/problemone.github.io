@@ -1,11 +1,11 @@
 <div>
 <div class="fadeIn">
     <h1 class="headerText">
-    Position Title
+    Student Technician
     </h1>
-    <p class="bodyText">Jan 2025 - Dec 2025</p>
-    <p class="bodyText">Company</p>
-    <p class="bodyText">Location</p>
+    <p class="bodyText">Jun. 2022 - Aug. 2022</p>
+    <p class="bodyText">Applied Research Laboratories</p>
+    <p class="bodyText">Austin, TX</p>
 </div>
 </div>
 
@@ -15,54 +15,11 @@
     Details
     </h1>
     <ul class="bodyText">
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
+    <li>Researched propagation of nonlinear acoustic waveforms through special materials</li>
+    <li>Applied partial differential equations to simulate waveform temporal evolution</li>
+    <li>Wrote MATLAB scripts simulating propagation of artificial and real data over time</li>
     </ul>
-</div>
-</div>
-
-<div>
-<div class="fadeIn">
-    <h1 class="headerText">
-    Published Work
-    </h1>
-    <p class="bodyText"><a href="https://github.com/" target="_blank">Title</a></p>
-    <p class="bodyText">Lead Author/Co-author/Contributor</p>
     <br>
-    <br>
-    <p class="bodyText"><a href="https://github.com/" target="_blank">Title</a></p>
-    <p class="bodyText">Lead Author/Co-author/Contributor</p>
-</div>
-</div>
-
-<div>
-<div class="fadeIn">
-    <h1 class="headerText">Media</h1>
-    <div class="imageContainer">
-    <div>
-        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" />
-        <p class="imageText bodyText">Image Description 1</p>
-    </div>
-    <div>
-        <iframe src="https://www.youtube.com/embed/OE8fGXYjvKw"></iframe>
-        <p class="imageText bodyText">Image Description 2</p>
-    </div>
-    <div>
-        <img src="https://www.bkacontent.com/wp-content/uploads/2016/06/Depositphotos_31146757_l-2015.jpg" />
-        <p class="imageText bodyText">Image Description 3</p>
-    </div>
-    </div>
-</div>
-</div>
-
-<div>
-<div class="fadeIn">
-    <h1 class="headerText">
-    Related Links
-    </h1>
-    <ul class="bodyText">
-    <li>GitHub Repo: <a href="https://github.com/" target="_blank">Title</a></li>
-    </ul>
+    <p class="bodyText"><span class="darkBody">Tools Used:</span> MATLAB</p>
 </div>
 </div>

@@ -1,11 +1,11 @@
 <div>
 <div class="fadeIn">
     <h1 class="headerText">
-    Position Title
+    Co-Founder, Lead Curriculum Designer
     </h1>
-    <p class="bodyText">Jan 2025 - Dec 2025</p>
-    <p class="bodyText">Company</p>
-    <p class="bodyText">Location</p>
+    <p class="bodyText">Jul. 2009 - Jul. 2023</p>
+    <p class="bodyText">ChildrenGiving.org</p>
+    <p class="bodyText">Mountain View, CA</p>
 </div>
 </div>
 
@@ -15,24 +15,21 @@
     Details
     </h1>
     <ul class="bodyText">
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
+    <li>Co-founded ChildrenGiving.org</li>
+    <li>Designed many coding and CS workshops, including:</li>
+    <ul class="bodyText">
+    <li>Python/JavaScript Programming Basics</li>
+    <li>Game Design/Programming</li>
+    <li>Arduino/Microcontroller Programming</li>
+    <li>Machine Learning Basics</li>
     </ul>
-</div>
-</div>
-
-<div>
-<div class="fadeIn">
-    <h1 class="headerText">
-    Published Work
-    </h1>
-    <p class="bodyText"><a href="https://github.com/" target="_blank">Title</a></p>
-    <p class="bodyText">Lead Author/Co-author/Contributor</p>
+    <li>Presented workshops at local library and public schools</li>
+    <li>Partnered with Microsoft Stanford and Tracy Unified School District to present workshops in-person and online</li>
+    <li>Delivered workshops to 1,000+ students</li>
+    </ul>
     <br>
-    <br>
-    <p class="bodyText"><a href="https://github.com/" target="_blank">Title</a></p>
-    <p class="bodyText">Lead Author/Co-author/Contributor</p>
+    <p class="bodyText"><span class="darkBody">Platforms Used:</span> Arduino</p>
+    <p class="bodyText"><span class="darkBody">Tools Used:</span> Python, Pygame, JavaScript, p5.js, HTML, Machine Learning Principles</p>
 </div>
 </div>
 
@@ -41,16 +38,16 @@
     <h1 class="headerText">Media</h1>
     <div class="imageContainer">
     <div>
-        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" />
-        <p class="imageText bodyText">Image Description 1</p>
+        <img src="./Sources/media/library_teaching.png" />
+        <p class="imageText bodyText">Saratoga County Library JavaScript Workshop</p>
     </div>
     <div>
-        <iframe src="https://www.youtube.com/embed/OE8fGXYjvKw"></iframe>
-        <p class="imageText bodyText">Image Description 2</p>
+        <img src="./Sources/media/microsoft_setup.png" />
+        <p class="imageText bodyText">Microsoft Stanford First Workshop Setup</p>
     </div>
     <div>
-        <img src="https://www.bkacontent.com/wp-content/uploads/2016/06/Depositphotos_31146757_l-2015.jpg" />
-        <p class="imageText bodyText">Image Description 3</p>
+        <img src="./Sources/media/microsoft_teaching.png" />
+        <p class="imageText bodyText">Microsoft Stanford JavaScript Game Design Workshop</p>
     </div>
     </div>
 </div>
@@ -62,7 +59,7 @@
     Related Links
     </h1>
     <ul class="bodyText">
-    <li>GitHub Repo: <a href="https://github.com/" target="_blank">Title</a></li>
+    <li>Organization Homepage: <a href="https://childrengiving.org/" target="_blank">ChildrenGiving.org</a></li>
     </ul>
 </div>
 </div>

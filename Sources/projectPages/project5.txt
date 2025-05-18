@@ -1,11 +1,11 @@
 <div>
 <div class="fadeIn">
     <h1 class="headerText">
-    Position Title
+    Software Engineer Intern
     </h1>
-    <p class="bodyText">Jan 2025 - Dec 2025</p>
-    <p class="bodyText">Company</p>
-    <p class="bodyText">Location</p>
+    <p class="bodyText">May 2023 - Aug. 2023</p>
+    <p class="bodyText">Hewlett Packard Enterprise</p>
+    <p class="bodyText">San Jose, CA</p>
 </div>
 </div>
 
@@ -15,24 +15,15 @@
     Details
     </h1>
     <ul class="bodyText">
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
+    <li>Programmed custom status and efficiency monitoring tools for 4 most recent Aruba ClearPass Policy Manager (CPPM) versions</li>
+    <li>Scripted modules for tracking machine and database health alongside CPPM</li>
+    <li>Designed dashboard for managing all information, enabling internal comparison of active CPPM versions</li>
+    <li>Addressed both internal and customer software issue tickets for Aruba CPPM</li>
+    <li>Deployed code repairs for different CPPM versions’ daemon processes</li>
     </ul>
-</div>
-</div>
-
-<div>
-<div class="fadeIn">
-    <h1 class="headerText">
-    Published Work
-    </h1>
-    <p class="bodyText"><a href="https://github.com/" target="_blank">Title</a></p>
-    <p class="bodyText">Lead Author/Co-author/Contributor</p>
     <br>
-    <br>
-    <p class="bodyText"><a href="https://github.com/" target="_blank">Title</a></p>
-    <p class="bodyText">Lead Author/Co-author/Contributor</p>
+    <p class="bodyText"><span class="darkBody">Platforms Used:</span> CentOS, Red Hat Linux, Jira, Aruba ClearPass Policy Manager</p>
+    <p class="bodyText"><span class="darkBody">Tools Used:</span> Python, Bash, Daemon, Prometheus, Grafana, JavaScript, Node.js, PostgreSQL</p>
 </div>
 </div>
 
@@ -41,28 +32,9 @@
     <h1 class="headerText">Media</h1>
     <div class="imageContainer">
     <div>
-        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" />
-        <p class="imageText bodyText">Image Description 1</p>
-    </div>
-    <div>
-        <iframe src="https://www.youtube.com/embed/OE8fGXYjvKw"></iframe>
-        <p class="imageText bodyText">Image Description 2</p>
-    </div>
-    <div>
-        <img src="https://www.bkacontent.com/wp-content/uploads/2016/06/Depositphotos_31146757_l-2015.jpg" />
-        <p class="imageText bodyText">Image Description 3</p>
+        <img src="./Sources/media/bowling_night.jpg" />
+        <p class="imageText bodyText">Intern Group Bowling Night</p>
     </div>
     </div>
-</div>
-</div>
-
-<div>
-<div class="fadeIn">
-    <h1 class="headerText">
-    Related Links
-    </h1>
-    <ul class="bodyText">
-    <li>GitHub Repo: <a href="https://github.com/" target="_blank">Title</a></li>
-    </ul>
 </div>
 </div>
