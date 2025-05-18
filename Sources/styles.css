@@ -1,5 +1,5 @@
 body{
-    font-family: Arial, sans-serif;
+    font-family: Lucida Console;
     margin: 0;
     min-height: 100vh;
     background-color: rgb(192, 188, 179);
@@ -152,8 +152,25 @@ canvas {
     right: 4vw;
 }
 
+.resumeBtn:hover{
+    border-radius: 5%;
+    width: 20vw;
+    transition: .7s;
+}
+
 .resumeBtn img{
     width: 3vw;
+}
+
+.resumeBtn .btnText{
+    color: #ffffff;
+    font-size: 0vw;
+    transition: .7s;
+}
+
+.resumeBtn:hover .btnText{
+    font-size: 2vw;
+    margin-left: 1vw;
 }
 
 .arrowBtn{

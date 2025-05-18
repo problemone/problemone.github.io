@@ -37,7 +37,7 @@
     </ul>
     <br>
     <p class="bodyText"><span class="darkBody">Platforms Used:</span> Linux</p>
-    <p class="bodyText"><span class="darkBody">Tools Used:</span>Python, C++, PyTorch, NumPy, Detectron2, OCR-RCNN, VGG Image Annotator, Open3D, OpenCV, ROS</p>
+    <p class="bodyText"><span class="darkBody">Tools Used:</span> Python, C++, PyTorch, NumPy, Detectron2, OCR-RCNN, VGG Image Annotator, Open3D, OpenCV, ROS</p>
 </div>
 </div>
 
@@ -69,7 +69,7 @@
     </div>
     <div>
         <img src="./Sources/media/robot_friend.png" />
-        <p class="imageText bodyText">Nicholas’ New Robot Friend \(ᵔᵕᵔ)/</p>
+        <p class="imageText bodyText">Nicholas’ New Robot Friend<br>\(ᵔᵕᵔ)/</p>
     </div>
     <div>
         <img src="./Sources/media/venue.png" />
