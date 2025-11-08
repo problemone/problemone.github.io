@@ -16,12 +16,11 @@
     </h1>
     <ul class="bodyText">
     <li>Deployed machine learning and general utility programs to distributed, asynchronous codebase</li>
-    <li>Implemented data mining in the form of livestream audio clipping</li>
+    <li>Implemented data mining of audio clips</li>
     <li>Developed data augmentation and embedding algorithms for use in all future machine learning audio projects</li>
-    <li>Designed vision transformer model for validation as audio transformation classifier</li>
-    <li>Trained and evaluated model to determine types of transformations present in clips, used to identify sampled or stolen music</li>
+    <li>Designed transformer-based audio transformation classifier</li>
     <li>Presented evaluation and tool applications to engineers at internal demonstration</li>
-    <li>Invited to return as full-time software engineer on machine learning team</li>
+    <li>Invited to return as full-time machine learning engineer</li>
     </ul>
     <br>
     <p class="bodyText"><span class="darkBody">Platforms Used:</span> Mac, Linux</p>
