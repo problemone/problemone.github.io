@@ -1,6 +1,26 @@
 <div>
 <div class="fadeIn">
     <h1 class="headerText">
+    Machine Learning Research Scientist
+    </h1>
+    <p class="bodyText">Oct. 2025 - Present</p>
+    <p class="bodyText">Meta</p>
+    <p class="bodyText">Menlo Park, CA</p>
+</div>
+</div>
+
+<div>
+<div class="fadeIn">
+    <h1 class="headerText">
+    Details
+    </h1>
+    <ul class="bodyText">
+    <li>Designing and deploying foundation models for audio and video content protection as part of Similarity Understanding team</li>
+    </ul>
+</div>
+
+<div class="fadeIn">
+    <h1 class="headerText">
     Machine Learning Engineer Intern
     </h1>
     <p class="bodyText">May 2024 - Aug. 2024</p>

@@ -3,7 +3,7 @@
     <h1 class="headerText">
     Machine Learning Researcher
     </h1>
-    <p class="bodyText">Jun. 2022 - Present</p>
+    <p class="bodyText">Jun. 2022 - Aug. 2025</p>
     <p class="bodyText">UT Austin Learning Agents Research Group</p>
     <p class="bodyText">Austin, TX</p>
 </div>
