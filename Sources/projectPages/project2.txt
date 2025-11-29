@@ -18,7 +18,9 @@
     <li>Designing and deploying foundation models for audio and video content protection as part of Similarity Understanding team</li>
     </ul>
 </div>
+</div>
 
+<div>
 <div class="fadeIn">
     <h1 class="headerText">
     Machine Learning Engineer Intern
