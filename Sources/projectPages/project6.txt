@@ -1,11 +1,11 @@
 <div>
 <div class="fadeIn">
     <h1 class="headerText">
-    Research Intern
+    Software Engineer Intern
     </h1>
-    <p class="bodyText">Feb. 2021 - May 2023</p>
-    <p class="bodyText">Stanford Digital Economy Lab</p>
-    <p class="bodyText">Stanford, CA</p>
+    <p class="bodyText">May 2023 - Aug. 2023</p>
+    <p class="bodyText">Hewlett Packard Enterprise</p>
+    <p class="bodyText">San Jose, CA</p>
 </div>
 </div>
 
@@ -15,33 +15,15 @@
     Details
     </h1>
     <ul class="bodyText">
-    <li>Researched personal productivity trends in response to machine learning innovations under S-DEL Director, Professor Erik Brynjolfsson</li>
-    <ul class="bodyText">
-    <li>Formulated interview questions and thematic prompts for Fireside Chat discussion series</li>
-    <li>Gathered data on personal productivity and projections for innovations in response to COVID-19</li>
-    <li>Contributed data to op-ed published to MIT Technology Review titled “The coming productivity boom”</li>
-    </ul>
-
-    <li>Analyzed Californian demographic data for Stanford California 100 Project</li>
-    <ul class="bodyText">
-    <li>Wrote Python code for webscraping and datamining California demographic data</li>
-    <li>Programmed R scripts performing statistical analysis on resultant data</li>
-    <li>Contributed data evaluation to Stanford California 100 Project</li>
-    </ul>
+    <li>Programmed custom status and efficiency monitoring tools for 4 most recent Aruba ClearPass Policy Manager (CPPM) versions</li>
+    <li>Scripted modules for tracking machine and database health alongside CPPM</li>
+    <li>Designed dashboard for managing all information, enabling internal comparison of active CPPM versions</li>
+    <li>Addressed both internal and customer software issue tickets for Aruba CPPM</li>
+    <li>Deployed code repairs for different CPPM versions’ daemon processes</li>
     </ul>
     <br>
-    <p class="bodyText"><span class="darkBody">Platforms Used:</span> Microsoft Excel</p>
-    <p class="bodyText"><span class="darkBody">Tools Used:</span> Python, R, NumPy, Pandas</p>
-</div>
-</div>
-
-<div>
-<div class="fadeIn">
-    <h1 class="headerText">
-    Published Work
-    </h1>
-    <p class="bodyText"><a href="https://www.technologyreview.com/2021/06/10/1026008/the-coming-productivity-boom/" target="_blank">The coming productivity boom</a></p>
-    <p class="bodyText">Contributor</p>
+    <p class="bodyText"><span class="darkBody">Platforms Used:</span> CentOS, Red Hat Linux, Jira, Aruba ClearPass Policy Manager</p>
+    <p class="bodyText"><span class="darkBody">Tools Used:</span> Python, Bash, Daemon, Prometheus, Grafana, JavaScript, Node.js, PostgreSQL</p>
 </div>
 </div>
 
@@ -50,8 +32,8 @@
     <h1 class="headerText">Media</h1>
     <div class="imageContainer">
     <div>
-        <img src="./Sources/media/stanford_profile.png" />
-        <p class="imageText bodyText">Nicholas’ Stanford Digital Economy Lab Profile</p>
+        <img src="./Sources/media/bowling_night.jpg" />
+        <p class="imageText bodyText">Intern Group Bowling Night</p>
     </div>
     </div>
 </div>

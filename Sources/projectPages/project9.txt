@@ -10,6 +10,20 @@
 <div>
 <div class="fadeIn">
     <h1 class="headerText">
+    Open-Source 3D Scanner
+    </h1>
+    <ul class="bodyText">
+    <li>Designing cheap, open-source 3D scanner using a Raspberry Pi and 3D printable materials</li>
+    </ul>
+    <br>
+    <p class="bodyText"><span class="darkBody">Platforms Used:</span> SolidWorks, Raspberry Pi, ELEGOO Neptune 4 Plus</p>
+    <p class="bodyText"><span class="darkBody">Tools Used:</span> Python, RPi GPIO</p>
+</div>
+</div>
+
+<div>
+<div class="fadeIn">
+    <h1 class="headerText">
     Longhorn Lights
     </h1>
     <ul class="bodyText">

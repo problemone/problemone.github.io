@@ -3,7 +3,7 @@
     <h1 class="headerText">
     Machine Learning Research Scientist
     </h1>
-    <p class="bodyText">Oct. 2025 - Present</p>
+    <p class="bodyText">May 2024 - Aug. 2024, Oct. 2025 - Present</p>
     <p class="bodyText">Meta</p>
     <p class="bodyText">Menlo Park, CA</p>
 </div>
@@ -15,37 +15,25 @@
     Details
     </h1>
     <ul class="bodyText">
-    <li>Designing and deploying foundation models for audio and video content protection as part of Similarity Understanding team</li>
+    <li>Machine Learning Research Scientist</li>
+    <ul class="bodyText">
+        <li>Designing foundation ML model architectures for audio and video content understanding across Meta’s Family of Apps</li>
+        <li>Deploying content understanding ML models for copyright holder protection as part of Similarity Understanding team</li>
+        <li>Coordinating ML model architecture and feature optimization experiments, driving regular performance improvements on both fundamental research (TPR, FPR, AUC) and problem-specific metrics</li>
     </ul>
-</div>
-</div>
 
-<div>
-<div class="fadeIn">
-    <h1 class="headerText">
-    Machine Learning Engineer Intern
-    </h1>
-    <p class="bodyText">May 2024 - Aug. 2024</p>
-    <p class="bodyText">Meta</p>
-    <p class="bodyText">Menlo Park, CA</p>
-</div>
-</div>
-
-<div>
-<div class="fadeIn">
-    <h1 class="headerText">
-    Details
-    </h1>
+    <li>Machine Learning Engineer Internship</li>
     <ul class="bodyText">
-    <li>Deployed machine learning and general utility programs to distributed, asynchronous codebase</li>
-    <li>Implemented data mining of audio clips</li>
-    <li>Developed data augmentation and embedding algorithms for use in all future machine learning audio projects</li>
-    <li>Designed transformer-based audio transformation classifier</li>
-    <li>Presented evaluation and tool applications to engineers at internal demonstration</li>
-    <li>Invited to return as full-time machine learning engineer</li>
+        <li>Deployed machine learning and general utility programs to distributed, asynchronous codebase</li>
+        <li>Implemented data mining of audio clips</li>
+        <li>Developed data augmentation and embedding algorithms for use in future machine learning audio projects</li>
+        <li>Designed transformer-based audio transformation classifier</li>
+        <li>Presented evaluation and tool applications to engineers at internal demonstration</li>
+        <li>Invited to return as full-time Machine Learning Research Scientist</li>
+    </ul>
     </ul>
     <br>
     <p class="bodyText"><span class="darkBody">Platforms Used:</span> Mac, Linux</p>
-    <p class="bodyText"><span class="darkBody">Tools Used:</span> Python, PyTorch, NumPy, OpenCV</p>
+    <p class="bodyText"><span class="darkBody">Tools Used:</span> Python, PyTorch, NumPy, OpenCV, Hack</p>
 </div>
 </div>

@@ -1,10 +1,10 @@
 <div>
 <div class="fadeIn">
     <h1 class="headerText">
-    Machine Learning Researcher
+    Haptic Robotics Researcher
     </h1>
-    <p class="bodyText">Jun. 2022 - Aug. 2025</p>
-    <p class="bodyText">UT Austin Learning Agents Research Group</p>
+    <p class="bodyText">Jun. 2025 - Mar. 2026</p>
+    <p class="bodyText">UT Austin Human-Enabled Robotic Technology Lab</p>
     <p class="bodyText">Austin, TX</p>
 </div>
 </div>
@@ -15,29 +15,17 @@
     Details
     </h1>
     <ul class="bodyText">
-    <li>Led team developing robust semantic segmentation pipeline of elevator control panel features for autonomous robots in novel environments</li>
-    <ul class="bodyText">
-    <li>Manually segmented and annotated elevator buttons and labels, creating “The Living with Robots Elevator Button Dataset”</li>
-    <li>Programmed augmentation algorithm and dataloader for image and segmentation data</li>
-    <li>Designed vision transformer- and feature pyramid network model-based approaches to single-pass semantic segmentation of control panel features</li>
-    <li>Introduced “recovery network” using class map generated from first pass output to identify potentially missed features</li>
-    <li>Trained and evaluated all models on custom dataset</li>
-    <li>Authored research paper published at 2024 IEEE International Conference on Intelligent Robots and Systems (IROS) titled “Recovering Missed Detections in an Elevator Button Segmentation Task”</li>
-    <li>Delivered Oral Presentation at IROS 2024, Abu Dhabi</li>
-    </ul>
-    
-    <li>Assisted PhD research on low-resolution video gaze tracking</li>
-    <ul class="bodyText">
-    <li>Wrote 3D spatial data loading and augmentation tools</li>
-    <li>Helped develop projection algorithm from 3D point cloud to 2D data representation</li>
-    <li>Produced code for interfacing between Open3D- and OpenCV-based processes</li>
-    <li>Deployed tools for gaze tracking on lab machines</li>
-    <li>Acknowledged in thesis titled “Cross-Domain Adaptation and Geometric Data Synthesis for Near-Eye to Remote Gaze Tracking”</li>
-    </ul>
+    <li>Led research project constructing 6-degree-of-freedom wearable haptic sleeve for immersive thoracostomy training</li>
+    <li>Developed custom VR environment integrated with hand-tracking for seamless interaction with surgical tools</li>
+    <li>Wrote dynamic virtual collision system to simulate varied environment material interaction feedback</li>
+    <li>Connected virtual system to haptic wearable, mimicking physical sensations experienced during chest tube insertion procedure</li>
+    <li>Organized human study evaluating efficacy of wearable to improve procedure performance</li>
+    <li>Authored research paper published at 2026 IEEE Haptics Symposium titled “Improving Chest Tube Insertion Depth and Timing Error in an Immersive VR Training Task with a Wearable Haptic Sleeve”</li>
+    <li>Delivered Oral Presentation at HAPTICS 2026 (Reno, NV)</li>
     </ul>
     <br>
-    <p class="bodyText"><span class="darkBody">Platforms Used:</span> Linux</p>
-    <p class="bodyText"><span class="darkBody">Tools Used:</span> Python, C++, PyTorch, NumPy, Detectron2, OCR-RCNN, VGG Image Annotator, Open3D, OpenCV, ROS</p>
+    <p class="bodyText"><span class="darkBody">Platforms Used:</span> Linux, Meta Quest 3</p>
+    <p class="bodyText"><span class="darkBody">Tools Used:</span> Unity, C#, Python, ROS</p>
 </div>
 </div>
 
@@ -46,16 +34,8 @@
     <h1 class="headerText">
     Published Work
     </h1>
-    <p class="bodyText"><a href="https://ieeexplore.ieee.org/document/10801499" target="_blank">Recovering Missed Detections in an Elevator Button Segmentation Task</a></p>
+    <p class="bodyText"><a href="https://ieeexplore.ieee.org/abstract/document/11495495" target="_blank">Improving Chest Tube Insertion Depth and Timing Error in an Immersive VR Training Task with a Wearable Haptic Sleeve</a></p>
     <p class="bodyText">Lead Author</p>
-    <br>
-    <br>
-    <p class="bodyText"><a href="https://doi.org/10.18738/T8/ZMIWXS" target="_blank">The Living with Robots Elevator Button Dataset</a></p>
-    <p class="bodyText">Lead Author</p>
-    <br>
-    <br>
-    <p class="bodyText"><a href="http://dx.doi.org/10.26153/tsw/46018" target="_blank">Cross-domain adaptation and geometric data synthesis for near-eye to remote gaze tracking</a></p>
-    <p class="bodyText">Contributor</p>
 </div>
 </div>
 
@@ -64,32 +44,9 @@
     <h1 class="headerText">Media</h1>
     <div class="imageContainer">
     <div>
-        <iframe src="https://www.youtube.com/embed/OE8fGXYjvKw"></iframe>
-        <p class="imageText bodyText">2024 IEEE IROS Oral Presentation</p>
-    </div>
-    <div>
-        <img src="./Sources/media/robot_friend.png" />
-        <p class="imageText bodyText">Nicholas’ New Robot Friend<br>\(ᵔᵕᵔ)/</p>
-    </div>
-    <div>
-        <img src="./Sources/media/venue.png" />
-        <p class="imageText bodyText">2024 IROS Conference Venue in Abu Dhabi</p>
-    </div>
-    <div>
-        <img src="./Sources/media/ut_poster_symposium.png" />
-        <p class="imageText bodyText">UT Student Research Poster Symposium</p>
+        <iframe src="https://www.youtube.com/embed/s4kwTqS7sO8"></iframe>
+        <p class="imageText bodyText">2026 IEEE HAPTICS Oral Presentation</p>
     </div>
     </div>
-</div>
-</div>
-
-<div>
-<div class="fadeIn">
-    <h1 class="headerText">
-    Related Links
-    </h1>
-    <ul class="bodyText">
-    <li>GitHub Repo: <a href="https://github.com/Living-With-Robots-Lab/ElevatorPanelFeatureDetection" target="_blank">Elevator Panel Feature Detection</a></li>
-    </ul>
 </div>
 </div>

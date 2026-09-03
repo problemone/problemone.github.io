@@ -1,11 +1,11 @@
 <div>
 <div class="fadeIn">
     <h1 class="headerText">
-    Student Technician
+    Co-Founder, Lead Curriculum Designer
     </h1>
-    <p class="bodyText">Jun. 2022 - Aug. 2022</p>
-    <p class="bodyText">Applied Research Laboratories</p>
-    <p class="bodyText">Austin, TX</p>
+    <p class="bodyText">Jul. 2009 - Jul. 2023</p>
+    <p class="bodyText">ChildrenGiving.org</p>
+    <p class="bodyText">Mountain View, CA</p>
 </div>
 </div>
 
@@ -15,12 +15,21 @@
     Details
     </h1>
     <ul class="bodyText">
-    <li>Researched propagation of nonlinear acoustic waveforms through special materials</li>
-    <li>Applied partial differential equations to simulate waveform temporal evolution</li>
-    <li>Wrote MATLAB scripts simulating propagation of artificial and real data over time</li>
+    <li>Co-founded ChildrenGiving.org</li>
+    <li>Designed many coding and CS workshops, including:</li>
+    <ul class="bodyText">
+    <li>Python/JavaScript Programming Basics</li>
+    <li>Game Design/Programming</li>
+    <li>Arduino/Microcontroller Programming</li>
+    <li>Machine Learning Basics</li>
+    </ul>
+    <li>Presented workshops at local library and public schools</li>
+    <li>Partnered with Microsoft Stanford and Tracy Unified School District to present workshops in-person and online</li>
+    <li>Delivered workshops to 1,000+ students</li>
     </ul>
     <br>
-    <p class="bodyText"><span class="darkBody">Tools Used:</span> MATLAB</p>
+    <p class="bodyText"><span class="darkBody">Platforms Used:</span> Arduino</p>
+    <p class="bodyText"><span class="darkBody">Tools Used:</span> Python, Pygame, JavaScript, p5.js, HTML, Machine Learning Principles</p>
 </div>
 </div>
 
@@ -29,9 +38,28 @@
     <h1 class="headerText">Media</h1>
     <div class="imageContainer">
     <div>
-        <img src="./Sources/media/arl_front.jpg" />
-        <p class="imageText bodyText">ARL Front Entrance</p>
+        <img src="./Sources/media/library_teaching.png" />
+        <p class="imageText bodyText">Santa Clara County Library JavaScript Workshop</p>
+    </div>
+    <div>
+        <img src="./Sources/media/microsoft_setup.png" />
+        <p class="imageText bodyText">Microsoft Stanford First Workshop Setup</p>
+    </div>
+    <div>
+        <img src="./Sources/media/microsoft_teaching.png" />
+        <p class="imageText bodyText">Microsoft Stanford JavaScript Game Design Workshop</p>
     </div>
     </div>
+</div>
+</div>
+
+<div>
+<div class="fadeIn">
+    <h1 class="headerText">
+    Related Links
+    </h1>
+    <ul class="bodyText">
+    <li>Organization Homepage: <a href="https://childrengiving.org/" target="_blank">ChildrenGiving.org</a></li>
+    </ul>
 </div>
 </div>

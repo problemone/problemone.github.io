@@ -1,11 +1,11 @@
 <div>
 <div class="fadeIn">
     <h1 class="headerText">
-    Co-Founder, Lead Curriculum Designer
+    Research Intern
     </h1>
-    <p class="bodyText">Jul. 2009 - Jul. 2023</p>
-    <p class="bodyText">ChildrenGiving.org</p>
-    <p class="bodyText">Mountain View, CA</p>
+    <p class="bodyText">Feb. 2021 - May 2023</p>
+    <p class="bodyText">Stanford Digital Economy Lab</p>
+    <p class="bodyText">Stanford, CA</p>
 </div>
 </div>
 
@@ -15,21 +15,33 @@
     Details
     </h1>
     <ul class="bodyText">
-    <li>Co-founded ChildrenGiving.org</li>
-    <li>Designed many coding and CS workshops, including:</li>
+    <li>Researched personal productivity trends in response to machine learning innovations under S-DEL Director, Professor Erik Brynjolfsson</li>
     <ul class="bodyText">
-    <li>Python/JavaScript Programming Basics</li>
-    <li>Game Design/Programming</li>
-    <li>Arduino/Microcontroller Programming</li>
-    <li>Machine Learning Basics</li>
+    <li>Formulated interview questions and thematic prompts for Fireside Chat discussion series</li>
+    <li>Gathered data on personal productivity and projections for innovations in response to COVID-19</li>
+    <li>Contributed data to op-ed published to MIT Technology Review titled “The coming productivity boom”</li>
     </ul>
-    <li>Presented workshops at local library and public schools</li>
-    <li>Partnered with Microsoft Stanford and Tracy Unified School District to present workshops in-person and online</li>
-    <li>Delivered workshops to 1,000+ students</li>
+
+    <li>Analyzed Californian demographic data for Stanford California 100 Project</li>
+    <ul class="bodyText">
+    <li>Wrote Python code for webscraping and datamining California demographic data</li>
+    <li>Programmed R scripts performing statistical analysis on resultant data</li>
+    <li>Contributed data evaluation to Stanford California 100 Project</li>
+    </ul>
     </ul>
     <br>
-    <p class="bodyText"><span class="darkBody">Platforms Used:</span> Arduino</p>
-    <p class="bodyText"><span class="darkBody">Tools Used:</span> Python, Pygame, JavaScript, p5.js, HTML, Machine Learning Principles</p>
+    <p class="bodyText"><span class="darkBody">Platforms Used:</span> Microsoft Excel</p>
+    <p class="bodyText"><span class="darkBody">Tools Used:</span> Python, R, NumPy, Pandas</p>
+</div>
+</div>
+
+<div>
+<div class="fadeIn">
+    <h1 class="headerText">
+    Published Work
+    </h1>
+    <p class="bodyText"><a href="https://www.technologyreview.com/2021/06/10/1026008/the-coming-productivity-boom/" target="_blank">The coming productivity boom</a></p>
+    <p class="bodyText">Contributor</p>
 </div>
 </div>
 
@@ -38,28 +50,9 @@
     <h1 class="headerText">Media</h1>
     <div class="imageContainer">
     <div>
-        <img src="./Sources/media/library_teaching.png" />
-        <p class="imageText bodyText">Santa Clara County Library JavaScript Workshop</p>
-    </div>
-    <div>
-        <img src="./Sources/media/microsoft_setup.png" />
-        <p class="imageText bodyText">Microsoft Stanford First Workshop Setup</p>
-    </div>
-    <div>
-        <img src="./Sources/media/microsoft_teaching.png" />
-        <p class="imageText bodyText">Microsoft Stanford JavaScript Game Design Workshop</p>
+        <img src="./Sources/media/stanford_profile.png" />
+        <p class="imageText bodyText">Nicholas’ Stanford Digital Economy Lab Profile</p>
     </div>
     </div>
-</div>
-</div>
-
-<div>
-<div class="fadeIn">
-    <h1 class="headerText">
-    Related Links
-    </h1>
-    <ul class="bodyText">
-    <li>Organization Homepage: <a href="https://childrengiving.org/" target="_blank">ChildrenGiving.org</a></li>
-    </ul>
 </div>
 </div>

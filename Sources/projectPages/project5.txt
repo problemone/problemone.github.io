@@ -1,11 +1,11 @@
 <div>
 <div class="fadeIn">
     <h1 class="headerText">
-    Software Engineer Intern
+    Intelligent Robotics Group University Intern
     </h1>
-    <p class="bodyText">May 2023 - Aug. 2023</p>
-    <p class="bodyText">Hewlett Packard Enterprise</p>
-    <p class="bodyText">San Jose, CA</p>
+    <p class="bodyText">Dec. 2018 - Dec. 2020</p>
+    <p class="bodyText">NASA Ames Research Center</p>
+    <p class="bodyText">Mountain View, CA</p>
 </div>
 </div>
 
@@ -15,15 +15,27 @@
     Details
     </h1>
     <ul class="bodyText">
-    <li>Programmed custom status and efficiency monitoring tools for 4 most recent Aruba ClearPass Policy Manager (CPPM) versions</li>
-    <li>Scripted modules for tracking machine and database health alongside CPPM</li>
-    <li>Designed dashboard for managing all information, enabling internal comparison of active CPPM versions</li>
-    <li>Addressed both internal and customer software issue tickets for Aruba CPPM</li>
-    <li>Deployed code repairs for different CPPM versions’ daemon processes</li>
+    <li>Researched radio frequency ranging techniques for distributed sensor network to be deployed on celestial bodies</li>
+    <li>Developed custom multilateration algorithms for localization of ad hoc sensor nodes launched from lander</li>
+    <li>Implemented various optimization techniques to minimize uncertainty in predicted location, improving precision by 50%</li>
+    <li>Collaborated with team on collapsible fin design</li>
+    <li>Designed and conducted on-site experiments in simulated lunar surface environment</li>
+    <li>Co-authored research paper published at 2020 IEEE Aerospace Conference titled “PHALANX: Expendable Projectile Sensor Networks for Planetary Exploration”</li>
+    <li>Presented work at 2 oral presentations and 2 poster symposia</li>
     </ul>
     <br>
-    <p class="bodyText"><span class="darkBody">Platforms Used:</span> CentOS, Red Hat Linux, Jira, Aruba ClearPass Policy Manager</p>
-    <p class="bodyText"><span class="darkBody">Tools Used:</span> Python, Bash, Daemon, Prometheus, Grafana, JavaScript, Node.js, PostgreSQL</p>
+    <p class="bodyText"><span class="darkBody">Platforms Used:</span> Arduino</p>
+    <p class="bodyText"><span class="darkBody">Tools Used:</span> MATLAB, Python, JavaScript, HTML, SolidWorks</p>
+</div>
+</div>
+
+<div>
+<div class="fadeIn">
+    <h1 class="headerText">
+    Published Work
+    </h1>
+    <p class="bodyText"><a href="https://ntrs.nasa.gov/citations/20200002137" target="_blank">PHALANX: Expendable Projectile Sensor Networks for Planetary Exploration</a></p>
+    <p class="bodyText">Co-author</p>
 </div>
 </div>
 
@@ -32,8 +44,24 @@
     <h1 class="headerText">Media</h1>
     <div class="imageContainer">
     <div>
-        <img src="./Sources/media/bowling_night.jpg" />
-        <p class="imageText bodyText">Intern Group Bowling Night</p>
+        <iframe src="https://www.youtube.com/embed/D2xMxCpQ78I?si=myPl7usBORHIXvpB"></iframe>
+        <p class="imageText bodyText">NASA Project PHALANX Oral Presentation</p>
+    </div>
+    <div>
+        <img src="./Sources/media/nasa_poster.jpg" />
+        <p class="imageText bodyText">NASA Project PHALANX Poster Symposium</p>
+    </div>
+    <div>
+        <img src="./Sources/media/sensor_node_v1.png" />
+        <p class="imageText bodyText">Distributed Sensor Node Prototype 1</p>
+    </div>
+    <div>
+        <img src="./Sources/media/sensor_node_v2.png" />
+        <p class="imageText bodyText">Distributed Sensor Node Prototype 2</p>
+    </div>
+    <div>
+        <img src="./Sources/media/simulated_lunar_surface.png" />
+        <p class="imageText bodyText">Simulated Lunar Surface for Experimentation</p>
     </div>
     </div>
 </div>
