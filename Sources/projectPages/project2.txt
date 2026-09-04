@@ -19,7 +19,7 @@
     <ul class="bodyText">
         <li>Designing foundation ML model architectures for audio and video content understanding across Meta’s Family of Apps</li>
         <li>Deploying content understanding ML models for copyright holder protection as part of Similarity Understanding team</li>
-        <li>Coordinating ML model architecture and feature optimization experiments, driving regular performance improvements on both fundamental research (TPR, FPR, AUC) and problem-specific metrics</li>
+        <li>Architecting ML model architecture and feature optimization experiments, driving regular performance improvements on both fundamental research (TPR, FPR, AUC) and problem-specific metrics</li>
     </ul>
 
     <li>Machine Learning Engineer Internship</li>
