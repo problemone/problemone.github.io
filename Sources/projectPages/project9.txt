@@ -30,6 +30,9 @@
     <li>Designed, manufactured, and programmed a 2-axis eye mechanism for a future animatronic build</li>
     <li>Will hook up to in-camera person tracking later; for now, build acts as proof-of-concept for mechanical mechanisms</li>
     </ul>
+    <br>
+    <p class="bodyText"><span class="darkBody">Platforms Used:</span> SolidWorks, Arduino, ELEGOO Neptune 4 Plus</p>
+    <p class="bodyText"><span class="darkBody">Tools Used:</span> C++</p>
 
     <br>
     <div class="imageContainer">
@@ -49,6 +52,8 @@
     <ul class="bodyText">
     <li>Designed and manufactured bookends for small engineering/cookbook collection</li>
     </ul>
+    <br>
+    <p class="bodyText"><span class="darkBody">Platforms Used:</span> SolidWorks, ELEGOO Neptune 4 Plus</p>
 
     <br>
     <div class="imageContainer">
