@@ -24,6 +24,49 @@
 <div>
 <div class="fadeIn">
     <h1 class="headerText">
+    Animatronic Eye Mechanism
+    </h1>
+    <ul class="bodyText">
+    <li>Designed, manufactured, and programmed a 2-axis eye mechanism for a future animatronic build</li>
+    <li>Will hook up to in-camera person tracking later; for now, build acts as proof-of-concept for mechanical mechanisms</li>
+    </ul>
+
+    <br>
+    <div class="imageContainer">
+    <div>
+        <iframe src="https://www.youtube.com/embed/oiJHpaHqBsY"></iframe>
+        <p class="imageText bodyText">Eyes Looking Around</p>
+    </div>
+    </div>
+</div>
+</div>
+
+<div>
+<div class="fadeIn">
+    <h1 class="headerText">
+    3D-Printed Bookends
+    </h1>
+    <ul class="bodyText">
+    <li>Designed and manufactured bookends for small engineering/cookbook collection</li>
+    </ul>
+
+    <br>
+    <div class="imageContainer">
+    <div>
+        <img src="./Sources/media/bookends_on_bed.png" />
+        <p class="imageText bodyText">Bookends on Print Bed</p>
+    </div>
+    <div>
+        <img src="./Sources/media/bookends_standing.png" />
+        <p class="imageText bodyText">Bookends In-Action</p>
+    </div>
+    </div>
+</div>
+</div>
+
+<div>
+<div class="fadeIn">
+    <h1 class="headerText">
     Longhorn Lights
     </h1>
     <ul class="bodyText">
