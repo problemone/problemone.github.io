@@ -42,11 +42,11 @@
 <div>
 <div class="fadeIn">
     <h1 class="headerText">Media</h1>
+    <div class="imageContainer">
     <div>
         <img src="./Sources/media/haptic_sleeve_presentation.png" />
         <p class="imageText bodyText">University of Texas System Research Presentation</p>
     </div>
-    <div class="imageContainer">
     <div>
         <iframe src="https://www.youtube.com/embed/s4kwTqS7sO8"></iframe>
         <p class="imageText bodyText">2026 IEEE HAPTICS Oral Presentation</p>
